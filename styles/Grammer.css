@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+  
+body{
+background-image: linear-gradient(to top right, rgba(8, 64, 90, 0.966),rgba(94, 207, 252, 0.979)) ;
+background-repeat: no-repeat;
+height: 100%;
+}
+/* Main Title CSS "Grammer" */
+.header {
+background-color: #05648ae1;
+color: #ffffff;
+padding: 15px;
+text-align: center;
+}
+/* right side menu CSS */
+.menu{
+background-color:#05648ae1;
+padding: 0;
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.menu #tense-btn{
+border: none;
+padding: 8px 8px 10px 15px;
+background-color:#05648ae1;
+color: #ffffff;
+transition: .5s;
+cursor: pointer;
+
+}
+/* Menu Items CSS */
+.menu li {
+padding: 8px 8px 10px 15px;
+background-color:#05648ae1;
+color: #ffffff;
+transition: .5s;
+cursor: pointer;
+}
+.accordion-body{
+padding: 0;
+}
+/* When hover and active Main menu Items */
+.menu #tense-btn:hover, .dot.active, .menu li:hover{
+background-color: #0099cc;
+}
+/* Sub menu Items container inside of Tenses tab */
+.accordion-item{
+background-color: #0099cc;
+border: none;
+}
+/* Sub menu Items */
+.menu .accordion-item li{
+    padding: 8px;
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    transition: .5s;
+    cursor: pointer;
+}
+/* when Sub menu Items hover and active */
+.menu .accordion-item .dot.active,.menu .accordion-item li:hover{
+background-color:#05648ae1;
+}
+
+.slide{
+display: none;
+}
+
+/* footer CSS */
+
+.footer {
+width: 100%;
+background-color: #0099cc;
+color: #ffffff;
+text-align: center;
+font-size: 12px;
+padding: 15px;
+}
+    
