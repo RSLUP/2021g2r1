@@ -13,6 +13,12 @@ body {
   }
 #about h1{
   color: azure;
+  text-shadow:2px 2px lightseagreen;
+
+}
+
+.container{
+  margin-top: 40px;
 }
 .slide {
   display: none;
@@ -38,25 +44,23 @@ body {
     background-color: black;
     position: sticky;
     position: -webkit-sticky;
+    text-shadow:3px 2px rgb(23, 66, 116);
+    
  }
 .items h2{
     color:white;
     text-align: center;
     
+    
 }
-.aboutus{
-    position: relative;
-    background-color: lightgrey;
-    border: 15px solid black;
-    padding: 50px;
-    margin-top: 20px;
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+#aboutus{
+  text-align: justify;
+  text-shadow:2px 2px rgb(220, 168, 233);
+  
+}
 
 .profile-area{
-    padding:80px 0;
+    padding:30px 30px;
 
 }
 .card{
