@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+#about{
+  background-image: url('../images/about.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  text-align: center;
+  }
+#about h1{
+  color: azure;
+}
+.slide {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.dot {
+  opacity: 0.6;
+  
+}
+.active,
+.dot:hover {
+  opacity: 1;
+
+}
+.items:after {
+  content: "";
+  display: inline;
+}
+.items{
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    position: -webkit-sticky;
+ }
+.items h2{
+    color:white;
+    text-align: center;
+    
+}
+.aboutus{
+    position: relative;
+    background-color: lightgrey;
+    border: 15px solid black;
+    padding: 50px;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+.profile-area{
+    padding:80px 0;
+
+}
+.card{
+    box-shadow: 0 0 40px rgb(155, 126, 126);
+    overflow: hidden;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+}
+.img1 img{
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+.img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: -80px;
+}
+.card:hover .img2 img{
+    border-color: rgb(72, 99, 99);
+    transition: .7s;
+}
+.main-text{
+    padding: 30px 0;
+    text-align: center;
+}
+.main-text h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.main-text p{
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
