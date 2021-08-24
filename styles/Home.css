@@ -6,7 +6,9 @@
 #home{
     position: relative;
 }
-.logo{
+
+/*nav bar*/
+#logo{
     width: 40px;
     height: 40px;
     margin: 0px 20px ;
@@ -123,7 +125,6 @@
     color:rgba(32,140,140,1);
     font-size: small;
 }
-
 
 .footer-page-links ul li,.social-media ul li{
     list-style: none;
