@@ -1,81 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Net</title>
-    <link rel="shortcut icon" href="/images/Elogo.png">
+    <link rel="shortcut icon" href="/images/Elogo.png" />
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/Home.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/Home.css" />
     <!--google font roboto and sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div id="home">
-     <!--nav bar-->
-     <header id="home">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="logo" src="images/Elogo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a id="nav-home" class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/Grammer.html">Grammer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Speech</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-     </header>
-    <!--nav bar end-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!--main banner-->
-    <div class="banner">
-      <div class="message">
-        <h1>Welcome to E-net</h1>
-        <h3>Totally free english learning platform!</h3>
-        <div>
-          <div id="g-btn">
-            <button type="button" class="btn btn-outline-light btn-lg">Grammer</button>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+  </head>
+  <body>
+    <div id="home">
+      <!--nav bar-->
+      <header id="home">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img id="logo" class="logo" src="images/Elogo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a
+                    id="nav-home"
+                    class="nav-link"
+                    aria-current="page"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/Grammer.html">Grammar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Speech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/About.html">About</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div id="s-btn">
-            <button type="button" class="btn btn-outline-light btn-lg">Speech</button>
-          </div>
-          <div id="q-btn">
-            <button type="button" class="btn btn-outline-light btn-lg">Quiz</button>
+        </nav>
+      </header>
+      <!--nav bar end-->
+
+      <!--main banner-->
+      <div class="banner">
+        <div class="message">
+          <h1>Welcome to E-net</h1>
+          <h3>Totally free english learning platform!</h3>
+          <div>
+            <div id="g-btn">
+              <a href="pages/Grammer.html"><button  type="button" class="btn btn-outline-light btn-lg shadow-none">Grammer</button></a>
+            </div>
+            <div id="s-btn">
+              <a href="pages/Speech.html"><button type="button" class="btn btn-outline-light btn-lg shadow-none">Speech</button></a>
+            </div>
+            <div id="q-btn">
+              <a href="/pages/Quiz.html"><button type="button" class="btn btn-outline-light btn-lg shadow-none">Quiz</button></a>
+            </div>
           </div>
         </div>
       </div>
+      <!--main banner end-->
+      <!--footer start-->
+      <footer class="footer text-center">
+        <div>
+          <div class="row pt-4">
+            <div class="col-md-4">
+              <div class="footer-page-links row">
+                <ul class="m-0 mb-2">
+                  <li>
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="/pages/About.html">About</a>
+                  </li>
+                  <li>
+                    <a href="">Terms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2">
+              <div class="form">
+                <div class="input-group input-group-sm w-75 mx-auto">
+                  <input type="email" class="form-control shadow-none send-email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append input-group-sm">
+                    <button class="btn btn-outline-light shadow-none send-email" type="button"><i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="social-media row">
+                <ul class="mb-0">
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fas fa-globe-asia"></i></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-center copyright  pt-2 pb-3">© 2021 Copyright:<a href="#"> RSLUP GROUP-2</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!--main banner end-->
 
-      <!--Start implement from here-->
-      
-  </div>
-    
-      
     <!--Jquery JS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <!--Bootstrap JS-->
     <script src="scripts/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>
