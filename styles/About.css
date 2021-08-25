@@ -49,13 +49,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 40px;
   }
 #about h1{
   color: azure;
-  text-shadow:2px 2px lightseagreen;
+ 
 
 }
 
@@ -70,6 +69,7 @@ body {
 }
 .dot {
   opacity: 0.6;
+  padding: 0px 15px;
   
 }
 .active,
@@ -83,10 +83,8 @@ body {
 }
 .items{
     overflow: hidden;
-    background-color: black;
-    position: sticky;
-    position: -webkit-sticky;
-    text-shadow:3px 2px rgb(23, 66, 116);
+    background-color: rgb(7, 20, 18);
+    padding: 0px 50px;
     
  }
 .items h2{
@@ -96,8 +94,13 @@ body {
     
 }
 #aboutus{
-  text-align: justify;
-  text-shadow:2px 2px rgb(220, 168, 233);
+  text-align:inherit;
+  padding:60px 80px;
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgb(165, 235, 196);
+  
+   
+  
   
 }
 
