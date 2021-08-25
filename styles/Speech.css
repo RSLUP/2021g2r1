@@ -46,19 +46,71 @@
     padding: 0;
 }
 
+
+body{
+    background-image: linear-gradient(to top right,#1f2222, #1f8787);
+    background-attachment: fixed;
+    background-position: 0% 100%; 
+}
+
+.body-container{
+    display: block;
+    position: relative;
+    margin-top: 50px;
+}
+
+/* right side menu CSS */
+.menu{
+background-color:#1f2222;
+padding: 0;
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.menu #tense-btn{
+border: none;
+padding: 8px 8px 10px 15px;
+background-color:#1f2222;
+color: #ffffff;
+transition: .5s;
+cursor: pointer;
+
+}
+/* Menu Items CSS */
+.menu li {
+padding: 8px 8px 10px 15px;
+background-color: #1f2222;
+color: #ffffff;
+transition: .5s;
+cursor: pointer;
+}
+
+/* When hover and active Main menu Items */
+.menu #tense-btn:hover, .dot.active, .menu li:hover{
+background-color: #1f8888;
+border-radius: 12px;
+}
+
+.slide{
+display: none;
+}
+/* Speach page CSS end */
+
+
+
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0px;
     width: 100%;
 }
 
 .form-control{
     border-right: none;
 }
-
-
 .send-email{
  background-color: transparent;
  margin-top: 0 !important;
