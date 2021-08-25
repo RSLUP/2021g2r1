@@ -9,31 +9,97 @@
     <!--Bootstrap css-->
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/Quiz.css">
+    <!--fontawsome icon script-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
 </head>
 <body>
-     <!--nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            English Net
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <header id="quiz">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="/images/Elogo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="../index.html">Home</a>
-            <a class="nav-item nav-link" href="Grammer.html">Grammer</a>
-            <a class="nav-item nav-link" href="Speech.html">Speech</a>
-            <a class="nav-item nav-link" href="Quiz.html">Quiz</a>
-            <a class="nav-item nav-link" href="About.html">About</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="nav-home" class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Grammer.html">Grammer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Vocabulary.html">Vocabulary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Speech.html">Speech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-quiz" href="/pages/Quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/About.html">About</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
+      </div>
+    </nav>
+  </header>
+  <!--nav bar end-->
       <!--Start implement from here-->
       
-      
+    <!--footer start-->
+    <footer class="footer text-center">
+      <div>
+        <div class="row pt-4">
+          <div class="col-md-4">
+            <div class="footer-page-links row">
+              <ul class="m-0 mb-2">
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="About.html">About</a>
+                </li>
+                <li>
+                  <a href="">Terms</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2">
+            <div class="form">
+              <div class="input-group input-group-sm w-75 mx-auto">
+                <input type="email" class="form-control shadow-none send-email" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append input-group-sm">
+                  <button class="btn btn-outline-light shadow-none send-email" type="button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="social-media row">
+              <ul class="mb-0">
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-globe-asia"></i></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center copyright  pt-2 pb-3">© 2021 Copyright:<a href="#"> RSLUP GROUP-2</a>
+        </div>
+      </div>
+    </footer> 
     <!--Jquery JS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!--Bootstrap JS-->
