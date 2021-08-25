@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
+body{
+    background-image: linear-gradient(to top right,#1f2222, #1f8787);
+    background-attachment: fixed;
+    background-position: 0% 100%; 
+}
 /* nav bar css*/
 #logo{
     width: 40px;
@@ -44,89 +49,58 @@
 }
 /* nav bar css end*/
   
-body{
-background-image: linear-gradient(to top right,#1f2222, #1f8787);
-background-attachment: fixed;
-background-position: 0% 100%; 
-}
-/* Main Title CSS "Grammer" */
-.container{
+
+
+.body-container{
+    display: block;
     position: relative;
-    top: 35px;
+    margin-top: 50px;
 }
 
 /* right side menu CSS */
 .menu{
-background-color:#1f2222;
-padding: 0;
+    background-color:#1f2222;
+    padding: 0;
 }
 
 .menu ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu #tense-btn{
-border: none;
-padding: 8px 8px 10px 15px;
-background-color:#1f2222;
-color: #ffffff;
-transition: .5s;
-cursor: pointer;
+    border: none;
+    padding: 8px 8px 10px 15px;
+    background-color:#1f2222;
+    color: #ffffff;
+    transition: .5s;
+    cursor: pointer;
 
 }
 /* Menu Items CSS */
 .menu li {
-padding: 8px 8px 10px 15px;
-background-color: #1f2222;
-color: #ffffff;
-transition: .5s;
-cursor: pointer;
-}
-.accordion-body{
-padding: 0;
-}
-/* When hover and active Main menu Items */
-.menu #tense-btn:hover, .dot.active, .menu li:hover{
-background-color: #1f8888;
-}
-/* Sub menu Items container inside of Tenses tab */
-.accordion-item{
-background-color: #1f2222;
-}
-/* Sub menu Items */
-.menu .accordion-item li{
-    padding: 8px;
+    padding: 8px 8px 10px 15px;
     background-color: #1f2222;
     color: #ffffff;
-    text-align: center;
     transition: .5s;
     cursor: pointer;
 }
-/* when Sub menu Items active */
-.menu .accordion-item .dot.active{
-background-color:#ffffff;
-color: #1f2222;
-border-radius: 12px;
-}
-/* when Sub menu Items hover */
-.menu .accordion-item li:hover{
-background-color:#c7c7c7;
-color: #1f2222;
-border-radius: 12px;
+
+/* When hover and active Main menu Items */
+.menu #tense-btn:hover, .dot.active, .menu li:hover{
+    background-color: #1f8888;
+    border-radius: 12px;
 }
 
+
 .slide{
-display: none;
+    display: none;
 }
 
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: -35px;
-    width: 100%;
 }
 
 .form-control{
