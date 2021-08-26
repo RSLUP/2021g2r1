@@ -45,16 +45,18 @@ body {
 
 
 #about{
-  background-image: url('../images/about.jpg');
+  background-image: url('../images/aboutback.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 20px;
+  
+  
   }
-#about h1{
-  color: azure;
- 
+#about h2{
+  color: rgb(224, 207, 207);
+  font-weight: bolder ;
 
 }
 
@@ -87,7 +89,7 @@ body {
     padding: 0px 50px;
     
  }
-.items h2{
+.items h3{
     color:white;
     text-align: center;
     
@@ -99,9 +101,9 @@ body {
   border-radius: 30px;
   box-shadow: 0 0 40px rgb(165, 235, 196);
   
-   
-  
-  
+}
+#aboutus h3{
+  font-weight: bold;
 }
 
 .profile-area{
