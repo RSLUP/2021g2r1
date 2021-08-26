@@ -1,6 +1,9 @@
 table,th,td{
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: large; 
+    font-weight: bold;
 }
 
 table{
@@ -10,12 +13,12 @@ table{
     
 }
 
-#simplePast p{
+#simplePast p, #simplepresent p{
     color:white;
 }
 
 .d-flex{
-    color: burlywood;
+    color: rgb(245, 156, 40);
 }
 
 h2{
@@ -26,4 +29,19 @@ h2{
 
 h1{
     color: white;
+}
+
+#simplepresent li{
+    color: white;
+}
+#simplepresent h4,#simplepresent h5,#simplepresent h6{
+    font-weight: bold;
+    color: white;
+
+}
+#simplepresent h3{
+    color: rgba(0, 0, 0, 0.884);
+    font-weight: bold;
+    font-style: italic;
+
 }
