@@ -1,0 +1,29 @@
+table,th,td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+table{
+    background-color: darkgray;
+    width: 50%;
+    height: 25%;
+    
+}
+
+#simplePast p{
+    color:white;
+}
+
+.d-flex{
+    color: burlywood;
+}
+
+h2{
+    font-weight: bold;
+    color: white;
+    
+}
+
+h1{
+    color: white;
+}
