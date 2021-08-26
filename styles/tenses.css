@@ -18,7 +18,7 @@ table{
 }
 
 .d-flex{
-    color: rgb(245, 156, 40);
+    color:rgb(231, 171, 91);
 }
 
 h2{
@@ -40,7 +40,7 @@ h1{
 
 }
 #simplepresent h3{
-    color: rgba(0, 0, 0, 0.884);
+    color: white;
     font-weight: bold;
     font-style: italic;
 
