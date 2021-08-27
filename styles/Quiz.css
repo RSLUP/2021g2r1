@@ -360,7 +360,7 @@ body{
         max-height: 100%;
         overflow-y: visible;
     }
-    .body-part .card{
+    .body-part .card{    
         padding: 8px;
         margin-bottom: 10px;
     }
@@ -374,5 +374,4 @@ body{
         max-width: 300px;
         margin: auto;
     }
-    
 }
