@@ -163,3 +163,59 @@ display: none;
         margin: auto;
     }
 }
+
+/* varb part*/
+
+.listBlue li a{ color: #40B0DF; }
+
+.irtable { font-size: 2vw; }
+
+.irTable{ 
+
+table-layout: outo; 
+width: 100%;
+box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5); 
+
+} 
+
+.irTable, td, th{ 
+
+padding: 10px; 
+
+border: 2px solid white; 
+
+border-collapse: collapse; 
+
+color:black;
+
+text-align: center; 
+
+cursor: pointer; 
+
+} 
+
+.irTable td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+ .irTable th{ 
+
+background-color: #838BC2; 
+
+} 
+
+.irTable tr:nth-child(odd){ 
+
+background-color: #EAE7FA; 
+
+} 
+
+ .irTable tr:nth-child(even){ 
+
+background-color:#C9D9F0; 
+
+} 
+
+/*end of verb*/
