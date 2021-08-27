@@ -1,7 +1,7 @@
 table,th,td{
     text-align: center;
     border: 2px solid black;
-    padding: 20px;
+    padding: 10px;
     font-size: large; 
     font-weight: bold;
 }
@@ -13,7 +13,7 @@ table{
     
 }
 
-#simplePast p, #simplepresent p{
+p{
     color:white;
 }
 
@@ -31,15 +31,15 @@ h1{
     color: white;
 }
 
-#simplepresent li{
+li{
     color: white;
 }
-#simplepresent h4,#simplepresent h5,#simplepresent h6{
+h4,h5,h6{
     font-weight: bold;
     color: white;
 
 }
-#simplepresent h3{
+#simplepresent h3 ,#presentcon h3{
     color: white;
     font-weight: bold;
     font-style: italic;
