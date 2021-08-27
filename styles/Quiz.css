@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 #quiz{
     position: relative;
@@ -46,11 +47,234 @@
     padding: 0;
 }
 
+
+/* hidden Quze App wrapper */
+
+.quizes-wrapper{
+    /* this must display flex in final project */
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #00000093;
+    z-index: 1;
+
+}
+#quize-rules{
+    /* this must display block in final project */
+    display: none;
+}
+#quize-question{
+    /* this must display none in final project */
+    display: block;
+}
+#quiz-result{
+    /* this must display none in final project */
+    display: none;
+}
+
+/* common CSS for all 3 quizes app box */
+.quize-box{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 5px;
+}
+/* Start Quize App reules box */
+#quize-rules .quize-box{
+    max-width: 500px;
+}
+
+#quize-rules .rule-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#quize-rules .rule-list{
+    padding: 15px 35px;
+    margin: 0;
+
+}
+#quize-rules .rule-list .info{
+    margin: 0 0 15px 10px;
+    font-size: 17px;
+}
+
+#quize-rules .rule-footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+/* End Quiz app Rules box css */
+
+/* Start Quiz app Question box css */
+#quize-question .quize-box{
+    max-width: 500px;
+}
+#quize-question .quiz-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+#quize-question .quiz-title p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+#quize-question .quiz-title h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+#quize-question .quiz-body{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+#quize-question .quiz-body .que-text{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+#quize-question .option-list{
+    padding-top: 20px;
+    display: block;
+}
+.quiz-body .option-list .li{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.quiz-body .option-list .li:hover{
+    color: #004085;
+    background: #cce5ff;
+    border-color: #b8caff;
+}
+
+.quiz-body .option-list .li .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    pointer-events: none;
+}
+/* wright Anser button CSS */
+.quiz-body .option-list .li .icon.tick{
+    color: #23902c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+.quiz-body .option-list .li.right{
+    color: #23902c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+/* wrong Answer Button CSS */
+.quiz-body .option-list .li .icon.cross{
+    color: #a42834;
+    border-color: #a82438;
+    background: #f8d7da;
+}
+.quiz-body .option-list .li.wrong{
+    color: #a42834;
+    border-color: #a82438;
+    background: #f8d7da;
+}
+
+#quize-question .quiz-footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#quize-question .quiz-footer .next-btn{
+    font-size: 20px;
+    width: 100px;
+}
+/* End quize question window CSS */
+
+/* Star Quize Relust Window CSS */
+#quiz-result .quize-box{
+    max-width: 350px;
+    padding: 25px 30px;
+    text-align: center;
+}
+#quiz-result .result-title{
+    font-weight: 800;
+}
+#quiz-result .result-body .image img{
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+}
+#quiz-result .result-body span{
+    padding-bottom: 30px;
+}
+#quiz-result .result-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#quiz-result .result-footer .btn{
+    width: 140px;
+}
+
+
+/* Quiz Bodypart CSS */
+
+body{
+    background-image: linear-gradient(to top right,#1f2222, #1f8787);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    top:35px;
+}
+.card-container{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.card{
+    margin: auto;
+    padding: 5px;
+    width: 12rem;
+}
+
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0px;
     width: 100%;
 }
 
