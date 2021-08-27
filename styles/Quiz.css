@@ -258,6 +258,14 @@ body{
     height: 100%;
 }
 
+.body-part{
+    max-height: calc(100vh - 119px);
+    overflow-y: auto;
+}
+.body-part::-webkit-scrollbar{
+    width: 0px;
+}
+
 .container{
     position: relative;
     top:35px;
@@ -327,11 +335,16 @@ body{
         max-width: 40%;
         margin: auto;
     }
+    .body-part{
+        max-height: 100%;
+        overflow-y: visible;
+    }
 }
 
-  @media only screen and (max-width: 660px) {
+@media only screen and (max-width: 660px) {
     .form{
         max-width: 300px;
         margin: auto;
     }
+    
 }
