@@ -56,10 +56,11 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: #00000093;
     z-index: 1;
-
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(1, 11, 29, 0.75);
 }
+
 #quize-rules{
     /* this must display block in final project */
     display: none;
@@ -75,7 +76,7 @@
 
 /* common CSS for all 3 quizes app box */
 .quize-box{
-    z-index: 1;
+    z-index: -100;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,6 +84,7 @@
     background: #fff;
     border-radius: 5px;
 }
+
 /* Start Quize App reules box */
 #quize-rules .quize-box{
     max-width: 500px;
@@ -131,7 +133,8 @@
     height: 70px;
     padding: 0 30px;
     background: #fff;
-    border-bottom: 1px solid rgb(161, 161, 161);
+    border-bottom: 1px solid rgb(10, 97, 97);
+    box-shadow: 0px 1px 10px rgba(10, 97, 97,0.75);
 }
 #quize-question .quiz-title p{
     font-size: 16px;
@@ -141,10 +144,12 @@
 #quize-question .quiz-title h2{
     font-size: 25px;
     font-weight: 600;
+    color: rgba(32,140,140,1);
+    padding-top: 10px;
 }
 #quize-question .quiz-body{
     padding: 25px 30px 20px 30px;
-    background: #fff;
+    background: none;
 }
 #quize-question .quiz-body .que-text{
     font-size: 25px;
@@ -156,12 +161,14 @@
     display: block;
 }
 .quiz-body .option-list .li{
-    background: aliceblue;
-    border: 1px solid #84c5fe;
-    border-radius: 5px;
-    padding: 8px 15px;
+    background: white;
+    border: 1.5px solid #25A38F;
+    color: #25A38F;
+    border-radius: 25px;
+    padding: 8px 22px;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 360;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,8 +176,8 @@
     transition: all 0.3s ease;
 }
 .quiz-body .option-list .li:hover{
-    color: #004085;
-    background: #cce5ff;
+    color: white;
+    background: #25A38F;
     border-color: #b8caff;
 }
 
@@ -186,26 +193,26 @@
 }
 /* wright Anser button CSS */
 .quiz-body .option-list .li .icon.tick{
-    color: #23902c;
-    border-color: #23903c;
-    background: #d4edda;
+    color: white;
+    border-color: white;
+    background: 25A38F;
 }
 .quiz-body .option-list .li.right{
-    color: #23902c;
-    border-color: #23903c;
-    background: #d4edda;
+    color: white;
+    border-color: #25A38F;
+    background: #25A38F;
 }
 
 /* wrong Answer Button CSS */
 .quiz-body .option-list .li .icon.cross{
-    color: #a42834;
-    border-color: #a82438;
-    background: #f8d7da;
+    color: white;
+    border-color: white;
+    background: #C44649;
 }
 .quiz-body .option-list .li.wrong{
-    color: #a42834;
-    border-color: #a82438;
-    background: #f8d7da;
+    color: white;
+    border-color: #C44649;
+    background: #C44649;
 }
 
 #quize-question .quiz-footer{
@@ -217,9 +224,22 @@
     justify-content: flex-end;
 }
 #quize-question .quiz-footer .next-btn{
-    font-size: 20px;
+    font-size: 16px;
     width: 100px;
+    background: linear-gradient(145deg, #CACCCF, #FFFFFF);
+    color: rgb(10, 97, 97);
+    border-radius: 15px;
+    border: solid rgb(10, 97, 97);
+    box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
+    padding: 3px 15px;
 }
+#quize-question .quiz-footer .next-btn:hover,#quize-question .quiz-footer .next-btn:active{
+    background: #0a6161;
+    box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
+    color: #ffffff;
+    border: solid #CACCCF;
+}
+
 /* End quize question window CSS */
 
 /* Star Quize Relust Window CSS */
@@ -268,8 +288,33 @@ body{
 }
 .card{
     margin: auto;
-    padding: 5px;
+    padding: 7px;
     width: 12rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+.card img{
+    border-radius: 5px;
+}
+.card button{
+    background: linear-gradient(145deg, #CACCCF, #FFFFFF);
+    color: rgb(10, 97, 97);
+    border-radius: 20px;
+    border: solid rgb(10, 97, 97);
+    box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
+    padding: 7px 20px;
+}
+
+.card button:hover,.card button:active,.card button:focus{
+    background: #0a6161;
+    box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
+    color: #ffffff;
+    border: solid #CACCCF;
+    font-size: 15px;
 }
 
 /*--footer*/
