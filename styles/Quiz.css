@@ -265,18 +265,40 @@ body{
 .body-part::-webkit-scrollbar{
     width: 0px;
 }
-.body-part .row{
+.body-part .deck{
     padding-top: 50px;
 }
+
 .body-part .card{
+    position: relative;
+    color: #e6f5ff;
     background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     display: flex;
-    float: left;
-    justify-content: flex-start;
-    padding: 8px;
+    flex-direction: row;
+    border-top: 2px solid rgba(225, 255, 255, .4);
+    border-right: 2px solid rgba(225, 255, 255, .4);
+    backdrop-filter: blur(5px);
+    margin-bottom: 30px;
+}
+.body-part .card-body{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 8px ;
+}
+.body-part .card-body h5{
+    font-size: 16px;
+}
+.body-part .img{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 .body-part .card img{
-    width: 100px;
+    align-self: center;
+    width: 70px;
+    border-radius: 5px;
 }
 
 /*--footer*/
@@ -337,6 +359,13 @@ body{
     .body-part{
         max-height: 100%;
         overflow-y: visible;
+    }
+    .body-part .card{
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    .body-part .card-body h5{
+        font-size: 17px;
     }
 }
 
