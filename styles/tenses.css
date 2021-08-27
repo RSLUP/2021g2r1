@@ -6,6 +6,10 @@ table,th,td{
     font-weight: bold;
 }
 
+th{
+    background-color: grey;
+}
+
 table{
     background-color: darkgray;
     width: 50%;
