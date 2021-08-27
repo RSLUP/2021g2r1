@@ -28,7 +28,7 @@ $(".quizes-wrapper #quize-rules .btn-close, #quiz-result .exit-btn").on("click",
     $(".quizes-wrapper #quiz-result").css("display", "none");
     $("body").css("overflow", "scroll");
     $(".quizes-wrapper").css("display", "none");
-    $(".body-part").css("pointer-events", "visible");
+    $(".body-part, #quiz, .footer").css("pointer-events", "visible");
     totalPoint = 0;
     QuesCount = 0;
 });
