@@ -51,7 +51,7 @@
 /* hidden Quze App wrapper */
 
 .quizes-wrapper{
-    /* this must display flex in final project */
+    /* this must display none in final project */
     display: flex;
     position: absolute;
     width: 100%;
@@ -66,11 +66,11 @@
 }
 #quize-question{
     /* this must display none in final project */
-    display: block;
+    display: none;
 }
 #quiz-result{
     /* this must display none in final project */
-    display: none;
+    display: block;
 }
 
 /* common CSS for all 3 quizes app box */
