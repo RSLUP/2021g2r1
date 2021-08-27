@@ -170,7 +170,7 @@ display: none;
 
 .irtable { font-size: 2vw; }
 
-.irTable{ 
+.irTable, .irTable2{ 
 
 table-layout: outo; 
 width: 100%;
@@ -178,7 +178,7 @@ box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
 
 } 
 
-.irTable, td, th{ 
+.irTable,.irTable2, td, th{ 
 
 padding: 10px; 
 
@@ -194,17 +194,18 @@ cursor: pointer;
 
 } 
 
-.irTable td {
+.irTable td,.irTable2 td {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
 
- .irTable th{ 
+ .irTable th,.irTable2 th{ 
 
 background-color: #838BC2; 
 
 } 
+
 
 .irTable tr:nth-child(odd){ 
 
@@ -218,6 +219,17 @@ background-color:#C9D9F0;
 
 } 
 
-/*end of verb*/
+.irTable2 tr:nth-child(n+6) {
+
+  background-color: #EAE7FA;
+
+}
+
+.irTable2 tr:nth-child(-n+5){
+  
+background-color:#C9D9F0; 
+
+}
+/* end verb and adverb*/
 
 
