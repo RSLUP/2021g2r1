@@ -1,12 +1,22 @@
 
 // window.onload = function(){
-//     for(let j=0; j<4; j++){
-
+//     let list = $(".card");
+//     for(let j=0; j<list.length; j++){
+//         list[j].onclick = function(){
+//             console.log(j);
+//         }
 //     }
 // }
+let activeQuize;
+let list = $(".card");
+for(let j=0; j<list.length; j++){
+    list[j].onclick = function(){
+        activeQuize = j;
+    }
+}
 
 // when user click Start Quze Button
-$(".body-part .card-body img").on("click", function (){
+$(".body-part .card").on("click", function (){
     $(".quizes-wrapper").css("display", "flex");
     $(window).scrollTop(0);
     $("body").css("overflow", "hidden");
@@ -14,6 +24,8 @@ $(".body-part .card-body img").on("click", function (){
 });
 // when user click close button in rules window or Exit button in Result window
 $(".quizes-wrapper #quize-rules .btn-close, #quiz-result .exit-btn").on("click", function(){
+    $("#quize-rules").css("display", "block");
+    $(".quizes-wrapper #quiz-result").css("display", "none");
     $("body").css("overflow", "scroll");
     $(".quizes-wrapper").css("display", "none");
     $(".body-part").css("pointer-events", "visible");
@@ -89,7 +101,7 @@ let Questions = [
 
 let totalPoint = 0;
 let QuesCount = 0;
-let ongoinQuize;
+
 // when user click next button in Question window
 $(".quizes-wrapper #quize-question .next-btn").on("click", function(){
     QuesCount++;
@@ -157,17 +169,17 @@ let ResultMsg = [
     {
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Oops!",
-        subMsg: `Not Enough ${totalPoint}`
+        subMsg: `Not Enough, you must work hard for `
     }
 ];
 
 function displayResult(){
     $("#quiz-result .result-body").html(`
     <div class="image">
-        <img src=${ResultMsg[0].imgSrc}alt="">
+        <img src="${ResultMsg[0].imgSrc}"alt="">
     </div>
     <h3>${ResultMsg[0].msg}</h3>
-    <p>${ResultMsg[0].subMsg}</p>
+    <p>${ResultMsg[0].subMsg}${activeQuize}</p>
     <p>Your Score</p>
     <span><h1>${totalPoint*10} / 50</h1></span>
     `);

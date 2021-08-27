@@ -52,7 +52,7 @@
 
 .quizes-wrapper{
     /* this must display none in final project */
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -62,7 +62,7 @@
 }
 #quize-rules{
     /* this must display block in final project */
-    display: none;
+    display: block;
 }
 #quize-question{
     /* this must display none in final project */
@@ -70,7 +70,7 @@
 }
 #quiz-result{
     /* this must display none in final project */
-    display: block;
+    display: none;
 }
 
 /* common CSS for all 3 quizes app box */
