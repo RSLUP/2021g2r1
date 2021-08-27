@@ -265,19 +265,18 @@ body{
 .body-part::-webkit-scrollbar{
     width: 0px;
 }
-
-.container{
-    position: relative;
-    top:35px;
+.body-part .row{
+    padding-top: 50px;
 }
-.card-container{
-    width: 100%;
-    margin-bottom: 2rem;
+.body-part .card{
+    background-color: rgba(0, 0, 0, 0.212);
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+    padding: 8px;
 }
-.card{
-    margin: auto;
-    padding: 5px;
-    width: 12rem;
+.body-part .card img{
+    width: 100px;
 }
 
 /*--footer*/
