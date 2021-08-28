@@ -146,7 +146,7 @@ function displayQuesion(n){
     getUserSelection(Questions[n].answer);
 }
 
-// function for get user input
+// This function is use to lisent user choise. reaction what need
 function getUserSelection(ans){
     let option = document.querySelectorAll("div.li");
     for(let i = 0; i < option.length; i++){
@@ -165,39 +165,47 @@ function getUserSelection(ans){
     }
 };
 
+// All 5 type of Messages related to user scores 
 let ResultMsg = [
     {
+        // Massage for 0 correct answer
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Oops!",
         subMsg: `You must work hard for `
     },
     {
+        // Massage for 1 correct answer
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Oops!",
         subMsg: `You must work hard for `
     },
     {
+        // Massage for 2 correct answer
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Not Enough!",
         subMsg: `You must work hard for `
     },
     {
+        // Massage for 3 correct answer
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Not Enough!",
         subMsg: `You must work hard for `
     },
     {
+        // Massage for 4 correct answer
         imgSrc: "/images/QuizeLogo/silver.jpg",
         msg: "Good!",
         subMsg: `You earned E-net Silver Badge for `
     },
     {
+        // Massage for 5 correct answer
         imgSrc: "/images/QuizeLogo/golden.png",
         msg: "Congratulations!",
         subMsg: `You earned E-net Golden Trophy for `
     }
 ];
 
+// inject all nessory question and answer in to result body of quize
 function displayResult(){
     $("#quiz-result .result-body").html(`
         <div class="image">
@@ -210,9 +218,11 @@ function displayResult(){
     `);
 }
 
+// when user clik Replay button end of the Quize 
 function replayQuiz(){
     totalPoint = 0;
     QuesCount = 0;
+    $(".quizes-wrapper #quize-question .next-btn").html("Next");
     $(".quizes-wrapper #quiz-result").css("display", "none");
     $("#quize-question").css("display", "block");
     displayQuesion(0);
