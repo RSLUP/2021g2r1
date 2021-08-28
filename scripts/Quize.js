@@ -169,19 +169,44 @@ let ResultMsg = [
     {
         imgSrc: "/images/QuizeLogo/notEnough.png",
         msg: "Oops!",
-        subMsg: `Not Enough, you must work hard for `
+        subMsg: `You must work hard for `
+    },
+    {
+        imgSrc: "/images/QuizeLogo/notEnough.png",
+        msg: "Oops!",
+        subMsg: `You must work hard for `
+    },
+    {
+        imgSrc: "/images/QuizeLogo/notEnough.png",
+        msg: "Not Enough!",
+        subMsg: `You must work hard for `
+    },
+    {
+        imgSrc: "/images/QuizeLogo/notEnough.png",
+        msg: "Not Enough!",
+        subMsg: `You must work hard for `
+    },
+    {
+        imgSrc: "/images/QuizeLogo/silver.jpg",
+        msg: "Good!",
+        subMsg: `You earned E-net Silver Badge for `
+    },
+    {
+        imgSrc: "/images/QuizeLogo/golden.png",
+        msg: "Congratulations!",
+        subMsg: `You earned E-net Golden Trophy for `
     }
 ];
 
 function displayResult(){
     $("#quiz-result .result-body").html(`
-    <div class="image">
-        <img src="${ResultMsg[0].imgSrc}"alt="">
-    </div>
-    <h3>${ResultMsg[0].msg}</h3>
-    <p>${ResultMsg[0].subMsg}${activeQuize}</p>
-    <p>Your Score</p>
-    <span><h1>${totalPoint*10} / 50</h1></span>
+        <div class="image">
+            <img src="${ResultMsg[totalPoint].imgSrc}" alt="">
+        </div>
+        <h3>${ResultMsg[totalPoint].msg}</h3>
+        <p>${ResultMsg[totalPoint].subMsg}</p>
+        <p>Your Score</p>
+        <span><h1><span style="color: rgb(6, 131, 6);">${totalPoint*10}</span> / 50</h1></span>
     `);
 }
 

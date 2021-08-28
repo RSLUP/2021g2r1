@@ -57,7 +57,7 @@
     width: 100%;
     height: 100vh;
     z-index: 1;
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(14px) saturate(80%);
     background-color: rgba(1, 11, 29, 0.75);
 }
 
@@ -76,7 +76,7 @@
 
 /* common CSS for all 3 quizes app box */
 .quize-box{
-    z-index: -100;
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,6 +100,7 @@
     padding: 0 15px 0 35px;
     font-size: 20px;
     font-weight: 600;
+    color: rgba(32,140,140,1);
 }
 
 #quize-rules .rule-list{
@@ -132,15 +133,12 @@
     justify-content: flex-start;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(10, 97, 97);
+    border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(10, 97, 97,0.75);
 }
-#quize-question .quiz-title p{
-    font-size: 16px;
-    font-weight: 500;
-    margin: 10px 0 0 0;
-}
+
 #quize-question .quiz-title h2{
     font-size: 25px;
     font-weight: 600;
@@ -152,9 +150,9 @@
     background: none;
 }
 #quize-question .quiz-body .que-text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-
+    color: rgb(90, 90, 90);
 }
 #quize-question .option-list{
     padding-top: 20px;
@@ -223,7 +221,7 @@
     align-items: center;
     justify-content: flex-end;
 }
-#quize-question .quiz-footer .next-btn{
+#quize-question .quiz-footer .next-btn,#quize-rules .continue-btn{
     font-size: 16px;
     width: 100px;
     background: linear-gradient(145deg, #CACCCF, #FFFFFF);
@@ -232,8 +230,10 @@
     border: solid rgb(10, 97, 97);
     box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
     padding: 3px 15px;
+    text-align: center;
+    cursor: pointer;
 }
-#quize-question .quiz-footer .next-btn:hover,#quize-question .quiz-footer .next-btn:active{
+#quize-question .quiz-footer .next-btn:hover,#quize-rules .continue-btn:hover{
     background: #0a6161;
     box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
     color: #ffffff;
@@ -259,14 +259,28 @@
 #quiz-result .result-body span{
     padding-bottom: 30px;
 }
+#quiz-result h2.score-txt{
+    color: cadetblue;
+}
 #quiz-result .result-footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
 }
-#quiz-result .result-footer .btn{
+#quiz-result .result-footer .replay-btn,#quiz-result .exit-btn{
     width: 140px;
+    padding: 5px;
+    font-weight: 400;
+    color: rgb(26, 146, 150);
+    background-color: #fff;
+    border: 1px solid rgb(26, 146, 150);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#quiz-result .replay-btn:hover, #quiz-result .exit-btn:hover{
+    color: white;
+    background: rgb(26, 146, 150);
 }
 
 
@@ -281,13 +295,29 @@ body{
 .body-part{
     max-height: calc(100vh - 119px);
     overflow-y: auto;
+    letter-spacing: 1px;
 }
 .body-part::-webkit-scrollbar{
     width: 0px;
 }
-.body-part .deck{
-    padding-top: 50px;
+.body-part .body-title{
+    padding: 50px;
+    display: flex;
 }
+.body-part .title-logo {
+    display: flex;
+    justify-content: center;
+}
+.body-part .title-logo img{
+    align-self: center;
+    margin: auto;
+    width: 150px;
+}
+.body-part .body-title .title-txt{
+    color: rgb(215, 244, 248);
+    padding: 30px 0px 0px 30px;
+}
+
 
 .body-part .card{
     position: relative;
@@ -299,8 +329,11 @@ body{
     flex-direction: row;
     border-top: 2px solid rgba(225, 255, 255, .4);
     border-right: 2px solid rgba(225, 255, 255, .4);
-    backdrop-filter: blur(5px);
     margin-bottom: 30px;
+    cursor: pointer;
+}
+.body-part .card:hover{
+    transform: scale(1.05);
 }
 .body-part .card-body{
     display: flex;
