@@ -1,19 +1,11 @@
 
-// window.onload = function(){
-//     let list = $(".card");
-//     for(let j=0; j<list.length; j++){
-//         list[j].onclick = function(){
-//             console.log(j);
-//         }
+// let activeQuize;
+// let list = $(".card");
+// for(let j=0; j<list.length; j++){
+//     list[j].onclick = function(){
+//         activeQuize = j;
 //     }
 // }
-let activeQuize;
-let list = $(".card");
-for(let j=0; j<list.length; j++){
-    list[j].onclick = function(){
-        activeQuize = j;
-    }
-}
 
 // when user click Start Quze Button
 $(".body-part .card").on("click", function (){
@@ -146,7 +138,7 @@ function displayQuesion(n){
     getUserSelection(Questions[n].answer);
 }
 
-// This function is use to lisent user choise. reaction what need
+// This function is use to lisent user choise.and get nessosary reaction for that.
 function getUserSelection(ans){
     let option = document.querySelectorAll("div.li");
     for(let i = 0; i < option.length; i++){

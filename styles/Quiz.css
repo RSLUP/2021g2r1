@@ -57,7 +57,7 @@
     width: 100%;
     height: 100vh;
     z-index: 1;
-    backdrop-filter: blur(14px) saturate(80%);
+    /* backdrop-filter: blur(14px) saturate(80%); */
     background-color: rgba(1, 11, 29, 0.75);
 }
 
@@ -301,7 +301,7 @@ body{
     width: 0px;
 }
 .body-part .body-title{
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     display: flex;
 }
 .body-part .title-logo {
@@ -317,8 +317,21 @@ body{
     color: rgb(215, 244, 248);
     padding: 30px 0px 0px 30px;
 }
-
-
+.body-part .body-title .title-txt h1{
+    font-weight: bold;
+}
+.body-part hr{
+    display: block;
+    margin-top: 0.5;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+.body-part #lesson-tenses{
+    color: rgb(215, 244, 248);
+}
 .body-part .card{
     position: relative;
     color: #e6f5ff;
@@ -419,6 +432,9 @@ body{
     }
     .body-part .card-body h5{
         font-size: 17px;
+    }
+    .body-part .body-title{
+        padding: 40px 0 0 0;
     }
 }
 
