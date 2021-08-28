@@ -232,4 +232,23 @@ background-color:#C9D9F0;
 }
 /* end verb and adverb*/
 
+.changeTx2 {
+  color: #F37970;
+  font-style:talic;
+}
 
+.changeTx1{
+  color:#FFF387;
+}
+
+.conjunction h5 {
+  color: turquoise;
+}
+.rule {
+  color :#F37970;
+}
+
+.changeExample{
+  color :#FFF387;
+}
+/*end of conjunction */
