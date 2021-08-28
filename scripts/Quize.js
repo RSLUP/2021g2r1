@@ -1,9 +1,12 @@
 
 let activeQuize;
-let list = $(".card");
+let quizeName;
+let list = $(".body-part .card");
 for(let j=0; j<list.length; j++){
     list[j].onclick = function(){
         activeQuize = j;
+        quizeName = $(".body-part .card-title")[j].innerHTML;
+        console.log(quizeName);
     }
 }
 
@@ -36,57 +39,57 @@ $(".quizes-wrapper #quize-rules .continue-btn").on("click", function(){
 let simplePres = [
     {
         id: 1,
-        Question: "SimplePres Questions",
+        Question: "01.Do you ______ chocolate milk?",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "like",
+            "likes",
+            "be like",
+            "liking"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "02.He ___ not want to go to the movies.",
+        answer: 2,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "do",
+            "does",
+            "is",
+            "be"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "03.My parents ______ in a two-bedroom apartment.",
+        answer: 1,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "live",
+            "lives",
+            "are live",
+            "living"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "04.You _____ so happy today!",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "looks",
+            "seem",
+            "be",
+            "looking"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "05.They're not here. They _________ right now.",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "go to school",
+            "swim at the beach",
+            "are on holiday",
+            "jogging"
         ]
     },
 
@@ -94,57 +97,57 @@ let simplePres = [
 let presntCont = [
     {
         id: 1,
-        Question: "presntCont",
-        answer: 1,
+        Question: "01. _____ they coming over for dinner?",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "Is",
+            "Are",
+            "Am",
+            "Does"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "02.I _____ my dinner right now.",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "eat",
+            "eating",
+            "am eating",
+            "eats"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "03.They are _____ a new shopping mall downtown.",
+        answer: 1,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "opening",
+            "opened",
+            "was open",
+            "open"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "04.I _____ at the hair salon until September.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "work",
+            "be working",
+            "am working",
+            "works"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "05.Why ________ playing football tomorrow?",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "he not is",
+            "he isn't",
+            "isn't he",
+            "do he"
         ]
     },
 
@@ -152,57 +155,57 @@ let presntCont = [
 let presntPerf = [
     {
         id: 1,
-        Question: "Present perfect",
-        answer: 1,
+        Question: "01.We _____ never eaten Mexican food.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "is",
+            "have",
+            "has",
+            "are"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "02.They___ gone to a rock concert.",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "'s",
+            "'es",
+            "'ve",
+            "was"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "03.Lindsay _____ not been to France.",
+        answer: 1,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "has",
+            "is",
+            "have",
+            "are"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "04.Andrea has _____ her umbrella.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "forget",
+            "forgetting",
+            "forgotten",
+            "forgot"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "05.The children ________ the lost puppy.",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "have find",
+            "is finding",
+            "have found",
+            "are find"
         ]
     },
 
@@ -210,57 +213,57 @@ let presntPerf = [
 let presPerfCont = [
     {
         id: 1,
-        Question: "presPerfct Continues",
-        answer: 1,
+        Question: "01.It has _____ snowing a lot this week.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "be",
+            "been",
+            "being",
+            "seem"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "02.Rick _____ been studying hard this semester.",
+        answer: 1,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "'s",
+            "s",
+            "'ve",
+            "were"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "03.I'm tired because I _____ been working out.",
+        answer: 3,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "'ve",
+            "has",
+            "have",
+            "is"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "04.We have been watching TV _____ we had dinner",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "for",
+            "since",
+            "by",
+            "during"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "Did you know he's been teaching German _____ fifteen years?",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "before",
+            "since",
+            "for",
+            "by"
         ]
     },
 
@@ -732,56 +735,10 @@ let futurPerfCont = [
 
 ];
 
-let tenses = [
-    {
-        name: "Simple Present",
-        Questions: simplePres
-    },
-    {
-        name: "Present Continuous",
-        Questions: presntCont
-    },
-    {
-        name: "Present Perfect",
-        Questions: presntPerf
-    },
-    {
-        name: "Present Perfect Continuous",
-        Questions: presPerfCont
-    },
-    {
-        name: "Simple Past",
-        Questions: simplePast
-    },
-    {
-        name: "Past Continuous",
-        Questions: pastCont
-    },
-    {
-        name: "Past Perfect",
-        Questions: pastPerf
-    },
-    {
-        name: "Past Perfect Continuous",
-        Questions: pastPerfCont
-    },
-    {
-        name: "Simple Future",
-        Questions: simpleFutu
-    },
-    {
-        name: "Future Continuous",
-        Questions: futureCont
-    },
-    {
-        name: "Future Perfect",
-        Questions: futurPerf
-    },
-    {
-        name: "Future Perfect Continuous",
-        Questions: futurPerfCont
-    }
-];
+let quizes =[simplePres,presntCont,presntPerf,presPerfCont
+            ,simplePast,pastCont,pastPerf,pastPerfCont
+            ,simpleFutu,futureCont,futurPerf,futurPerfCont];
+
 
 let totalPoint = 0;
 let QuesCount = 0;
@@ -807,27 +764,27 @@ function displayQuesion(n){
     $(".quizes-wrapper #quize-question .next-btn").css("display", "none");
     
     $("#quize-question .quiz-title").html(`
-        <h2>Question ${tenses[activeQuize][n].id} / 5</h2>
+        <h2>Question ${quizes[activeQuize][n].id} / 5</h2>
     `);
     $("#quize-question .quiz-body").html(`
     <div class="que-text">
-        <span>${tenses[activeQuize][n].Question}</span>
+        <span>${quizes[activeQuize][n].Question}</span>
     </div>
     <div class="option-list">
         <div class="li">
-            <span>${tenses[activeQuize][n].options[0]}</span>
+            <span>${quizes[activeQuize][n].options[0]}</span>
         </div>
         <div class="li">
-            <span>${tenses[activeQuize][n].options[1]}</span>
+            <span>${quizes[activeQuize][n].options[1]}</span>
         </div>
         <div class="li">
-            <span>${tenses[activeQuize][n].options[2]}</span>
+            <span>${quizes[activeQuize][n].options[2]}</span>
         </div>
         <div class="li" style="margin-bottom: 0;">
-            <span>${tenses[activeQuize][n].options[3]}</span>
+            <span>${quizes[activeQuize][n].options[3]}</span>
         </div>
     </div>`);
-    getUserSelection(tenses[activeQuize][n].answer);
+    getUserSelection(quizes[activeQuize][n].answer);
 }
 
 // This function is use to lisent user choise.and get nessosary reaction for that.
@@ -897,7 +854,7 @@ function displayResult(){
             <img src="${ResultMsg[totalPoint].imgSrc}" alt="">
         </div>
         <h3>${ResultMsg[totalPoint].msg}</h3>
-        <p>${ResultMsg[totalPoint].subMsg}</p>
+        <p>${ResultMsg[totalPoint].subMsg}${quizeName}</p>
         <p>Your Score</p>
         <span><h1><span style="color: rgb(6, 131, 6);">${totalPoint*10}</span> / 50</h1></span>
     `);
