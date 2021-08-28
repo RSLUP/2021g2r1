@@ -1,21 +1,28 @@
 table,th,td{
-    text-align: center;
-    border: 2px solid black;
-    padding: 10px;
-    font-size: large; 
-    font-weight: bold;
+    padding: 10px; 
+    border: 2px solid white; 
+    border-collapse: collapse; 
+    color:black;
+    text-align: center; 
+    cursor: pointer; 
 }
-
+td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
 
 th{
-    background-color: grey;
+    background-color: #838BC2; 
+}
+table tr:nth-child(even){ 
+
+    background-color:#C9D9F0; 
 }
 
-table{
-    background-color: darkgray;
-    width: 50%;
-    height: 25%;
-    
+table tr:nth-child(odd){ 
+
+    background-color: #EAE7FA; 
 }
 
 p{
