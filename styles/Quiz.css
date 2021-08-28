@@ -288,8 +288,10 @@
 
 body{
     background-image: linear-gradient(to top right,#1f2222, #1f8787);
-    background-repeat: no-repeat;
-    height: 100%;
+    /* background-repeat: no-repeat;
+    height: 100%; */
+    background-attachment: fixed;
+    background-position: 0% 100%;
 }
 
 .body-part{
@@ -370,6 +372,8 @@ body{
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
     width: 100%;
 }
 
