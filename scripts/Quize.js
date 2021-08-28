@@ -1,13 +1,13 @@
 
-// let activeQuize;
-// let list = $(".card");
-// for(let j=0; j<list.length; j++){
-//     list[j].onclick = function(){
-//         activeQuize = j;
-//     }
-// }
+let activeQuize;
+let list = $(".card");
+for(let j=0; j<list.length; j++){
+    list[j].onclick = function(){
+        activeQuize = j;
+    }
+}
 
-// when user click Start Quze Button
+// when user click Quze Button
 $(".body-part .card").on("click", function (){
     $(".quizes-wrapper").css("display", "flex");
     $(window).scrollTop(0);
@@ -32,10 +32,651 @@ $(".quizes-wrapper #quize-rules .continue-btn").on("click", function(){
     displayQuesion(0);
 });
 
-let Questions = [
+// present Times Questions pack
+let simplePres = [
     {
         id: 1,
+        Question: "SimplePres Questions",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
         Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let presntCont = [
+    {
+        id: 1,
+        Question: "presntCont",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let presntPerf = [
+    {
+        id: 1,
+        Question: "Present perfect",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let presPerfCont = [
+    {
+        id: 1,
+        Question: "presPerfct Continues",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+// Past Times Questions pack
+let simplePast = [
+    {
+        id: 1,
+        Question: "simple Past",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let pastCont = [
+    {
+        id: 1,
+        Question: "Past Continues",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let pastPerf = [
+    {
+        id: 1,
+        Question: "past Perfect",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let pastPerfCont = [
+    {
+        id: 1,
+        Question: "past perfect Continus",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+// Future Times Questions pack
+let simpleFutu = [
+    {
+        id: 1,
+        Question: "simple Future",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let futureCont = [
+    {
+        id: 1,
+        Question: "Future Continues",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let futurPerf = [
+    {
+        id: 1,
+        Question: "FuturPerfct",
+        answer: 1,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 2,
+        Question: "dsfdfdfdsafdsafdsfds",
+        answer: 4,
+        options: [
+            "Randsfdsfdsfry",
+            "Randodsfdhrthtehemory",
+            "Runrgregregremory",
+            "Noregrgregregrse"
+        ]
+    },
+    {
+        id: 3,
+        Question: "Whregergrgerg RAM",
+        answer: 2,
+        options: [
+            "Randoregrgergmory",
+            "Ranrewgreger Memory",
+            "Runregregregregregory",
+            "Nonregregrgse"
+        ]
+    },
+    {
+        id: 4,
+        Question: "What is the full form of RAM",
+        answer: 3,
+        options: [
+            "Random Access Memory",
+            "Randomely Access Memory",
+            "Run Acept Memory",
+            "None of these"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Whregregegregregregof RAM",
+        answer: 4,
+        options: [
+            "Ranregregregregemory",
+            "Randoregregregregry",
+            "Rregregregregregrry",
+            "Noregregregregrge"
+        ]
+    },
+
+];
+let futurPerfCont = [
+    {
+        id: 1,
+        Question: "future perfect Continues",
         answer: 1,
         options: [
             "Random Access Memory",
@@ -91,6 +732,57 @@ let Questions = [
 
 ];
 
+let tenses = [
+    {
+        name: "Simple Present",
+        Questions: simplePres
+    },
+    {
+        name: "Present Continuous",
+        Questions: presntCont
+    },
+    {
+        name: "Present Perfect",
+        Questions: presntPerf
+    },
+    {
+        name: "Present Perfect Continuous",
+        Questions: presPerfCont
+    },
+    {
+        name: "Simple Past",
+        Questions: simplePast
+    },
+    {
+        name: "Past Continuous",
+        Questions: pastCont
+    },
+    {
+        name: "Past Perfect",
+        Questions: pastPerf
+    },
+    {
+        name: "Past Perfect Continuous",
+        Questions: pastPerfCont
+    },
+    {
+        name: "Simple Future",
+        Questions: simpleFutu
+    },
+    {
+        name: "Future Continuous",
+        Questions: futureCont
+    },
+    {
+        name: "Future Perfect",
+        Questions: futurPerf
+    },
+    {
+        name: "Future Perfect Continuous",
+        Questions: futurPerfCont
+    }
+];
+
 let totalPoint = 0;
 let QuesCount = 0;
 
@@ -115,27 +807,27 @@ function displayQuesion(n){
     $(".quizes-wrapper #quize-question .next-btn").css("display", "none");
     
     $("#quize-question .quiz-title").html(`
-        <h2>Question ${Questions[n].id} / 5</h2>
+        <h2>Question ${tenses[activeQuize][n].id} / 5</h2>
     `);
     $("#quize-question .quiz-body").html(`
     <div class="que-text">
-        <span>What does HTML stand for?</span>
+        <span>${tenses[activeQuize][n].Question}</span>
     </div>
     <div class="option-list">
         <div class="li">
-            <span>Hyper Text markup languege.</span>
+            <span>${tenses[activeQuize][n].options[0]}</span>
         </div>
         <div class="li">
-            <span>Hyper Text markup languege.</span>
+            <span>${tenses[activeQuize][n].options[1]}</span>
         </div>
         <div class="li">
-            <span>Hyper Text markup languege.</span>
+            <span>${tenses[activeQuize][n].options[2]}</span>
         </div>
         <div class="li" style="margin-bottom: 0;">
-            <span>Hyper Text markup languege.</span>
+            <span>${tenses[activeQuize][n].options[3]}</span>
         </div>
     </div>`);
-    getUserSelection(Questions[n].answer);
+    getUserSelection(tenses[activeQuize][n].answer);
 }
 
 // This function is use to lisent user choise.and get nessosary reaction for that.
@@ -156,6 +848,7 @@ function getUserSelection(ans){
         }
     }
 };
+// All Quizes type name Array
 
 // All 5 type of Messages related to user scores 
 let ResultMsg = [
