@@ -51,23 +51,23 @@
 /* hidden Quze App wrapper */
 
 .quizes-wrapper{
-    /* this must display flex in final project */
-    display: flex;
+    /* this must display none in final project */
+    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
     z-index: 1;
-    backdrop-filter: blur(16px) saturate(180%);
+    /* backdrop-filter: blur(14px) saturate(80%); */
     background-color: rgba(1, 11, 29, 0.75);
 }
 
 #quize-rules{
     /* this must display block in final project */
-    display: none;
+    display: block;
 }
 #quize-question{
     /* this must display none in final project */
-    display: block;
+    display: none;
 }
 #quiz-result{
     /* this must display none in final project */
@@ -76,7 +76,7 @@
 
 /* common CSS for all 3 quizes app box */
 .quize-box{
-    z-index: -100;
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,6 +100,7 @@
     padding: 0 15px 0 35px;
     font-size: 20px;
     font-weight: 600;
+    color: rgba(32,140,140,1);
 }
 
 #quize-rules .rule-list{
@@ -132,15 +133,12 @@
     justify-content: flex-start;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(10, 97, 97);
+    border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(10, 97, 97,0.75);
 }
-#quize-question .quiz-title p{
-    font-size: 16px;
-    font-weight: 500;
-    margin: 10px 0 0 0;
-}
+
 #quize-question .quiz-title h2{
     font-size: 25px;
     font-weight: 600;
@@ -152,9 +150,9 @@
     background: none;
 }
 #quize-question .quiz-body .que-text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-
+    color: rgb(90, 90, 90);
 }
 #quize-question .option-list{
     padding-top: 20px;
@@ -223,7 +221,7 @@
     align-items: center;
     justify-content: flex-end;
 }
-#quize-question .quiz-footer .next-btn{
+#quize-question .quiz-footer .next-btn,#quize-rules .continue-btn{
     font-size: 16px;
     width: 100px;
     background: linear-gradient(145deg, #CACCCF, #FFFFFF);
@@ -232,8 +230,10 @@
     border: solid rgb(10, 97, 97);
     box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
     padding: 3px 15px;
+    text-align: center;
+    cursor: pointer;
 }
-#quize-question .quiz-footer .next-btn:hover,#quize-question .quiz-footer .next-btn:active{
+#quize-question .quiz-footer .next-btn:hover,#quize-rules .continue-btn:hover{
     background: #0a6161;
     box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
     color: #ffffff;
@@ -259,14 +259,28 @@
 #quiz-result .result-body span{
     padding-bottom: 30px;
 }
+#quiz-result h2.score-txt{
+    color: cadetblue;
+}
 #quiz-result .result-footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
 }
-#quiz-result .result-footer .btn{
+#quiz-result .result-footer .replay-btn,#quiz-result .exit-btn{
     width: 140px;
+    padding: 5px;
+    font-weight: 400;
+    color: rgb(26, 146, 150);
+    background-color: #fff;
+    border: 1px solid rgb(26, 146, 150);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#quiz-result .replay-btn:hover, #quiz-result .exit-btn:hover{
+    color: white;
+    background: rgb(26, 146, 150);
 }
 
 
@@ -278,43 +292,79 @@ body{
     height: 100%;
 }
 
-.container{
-    position: relative;
-    top:35px;
+.body-part{
+    max-height: calc(100vh - 119px);
+    overflow-y: auto;
+    letter-spacing: 1px;
 }
-.card-container{
-    width: 100%;
-    margin-bottom: 2rem;
+.body-part::-webkit-scrollbar{
+    width: 0px;
 }
-.card{
+.body-part .body-title{
+    padding: 50px 50px 0 50px;
+    display: flex;
+}
+.body-part .title-logo {
+    display: flex;
+    justify-content: center;
+}
+.body-part .title-logo img{
+    align-self: center;
     margin: auto;
-    padding: 7px;
-    width: 12rem;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-
+    width: 150px;
 }
-.card img{
+.body-part .body-title .title-txt{
+    color: rgb(215, 244, 248);
+    padding: 30px 0px 0px 30px;
+}
+.body-part .body-title .title-txt h1{
+    font-weight: bold;
+}
+.body-part hr{
+    display: block;
+    margin-top: 0.5;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+.body-part #lesson-tenses{
+    color: rgb(215, 244, 248);
+}
+.body-part .card{
+    position: relative;
+    color: #e6f5ff;
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid rgba(225, 255, 255, .4);
+    border-right: 2px solid rgba(225, 255, 255, .4);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.body-part .card:hover{
+    transform: scale(1.05);
+}
+.body-part .card-body{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 8px ;
+}
+.body-part .card-body h5{
+    font-size: 16px;
+}
+.body-part .img{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.body-part .card img{
+    align-self: center;
+    width: 70px;
     border-radius: 5px;
-}
-.card button{
-    background: linear-gradient(145deg, #CACCCF, #FFFFFF);
-    color: rgb(10, 97, 97);
-    border-radius: 20px;
-    border: solid rgb(10, 97, 97);
-    box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
-    padding: 7px 20px;
-}
-
-.card button:hover,.card button:active,.card button:focus{
-    background: #0a6161;
-    box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
-    color: #ffffff;
-    border: solid #CACCCF;
-    font-size: 15px;
 }
 
 /*--footer*/
@@ -372,9 +422,23 @@ body{
         max-width: 40%;
         margin: auto;
     }
+    .body-part{
+        max-height: 100%;
+        overflow-y: visible;
+    }
+    .body-part .card{    
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    .body-part .card-body h5{
+        font-size: 17px;
+    }
+    .body-part .body-title{
+        padding: 40px 0 0 0;
+    }
 }
 
-  @media only screen and (max-width: 660px) {
+@media only screen and (max-width: 660px) {
     .form{
         max-width: 300px;
         margin: auto;
