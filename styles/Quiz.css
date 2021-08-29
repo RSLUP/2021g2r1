@@ -57,8 +57,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    z-index: 1;
-    /* backdrop-filter: blur(14px) saturate(80%); */
+    z-index: 3;
     background-color: rgba(1, 11, 29, 0.75);
 }
 
@@ -151,8 +150,8 @@
     background: none;
 }
 #quize-question .quiz-body .que-text{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 400;
     color: rgb(90, 90, 90);
 }
 #quize-question .option-list{
