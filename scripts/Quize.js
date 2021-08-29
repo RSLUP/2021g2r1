@@ -503,57 +503,57 @@ let pastPerfCont = [
 let simpleFutu = [
     {
         id: 1,
-        Question: "simple Future",
+        Question: "He _____ arrive on time.",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "will",
+            "is",
+            "not",
+            "are"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "It ________ tomorrow.",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "snows",
+            "is snowing",
+            "will snow",
+            "have snow"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "We won't ________ until we get there.",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "knowing",
+            "know",
+            "have know",
+            "has know"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Will your folks _____ before Tuesday?",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "leaving",
+            "leave",
+            "leaves",
+            "is leave"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "I ________ back before Friday.",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "will",
+            "have",
+            "am being",
+            "'ll be"
         ]
     },
 
@@ -561,57 +561,57 @@ let simpleFutu = [
 let futureCont = [
     {
         id: 1,
-        Question: "Future Continues",
-        answer: 1,
+        Question: "They ______________ when I arrive there at tomorrow night.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "slept",
+            "will be sleeping",
+            "will sleeping",
+            "are going to sleep"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "Will you be _____________ there when I arrive?",
+        answer: 1,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "waiting",
+            "waited",
+            "wait",
+            "have waited"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "They ________ the cottage that weekend.",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "using",
+            "'ll be using",
+            "'re be using",
+            "are use"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Nadun _____ be coming to the picnic.",
+        answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "won't",
+            "won't not",
+            "willn't",
+            "will have"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "I'll try my best to spot you. What ________ wearing?",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "will you",
+            "will",
+            "will you be",
+            "has you"
         ]
     },
 
