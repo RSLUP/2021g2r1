@@ -11,10 +11,11 @@ body{
 }
 /* nav bar css*/
 #logo{
-    width: 40px;
+    width: 72px;
     height: 40px;
     margin: 0px 20px ;
     padding: 0;
+    border-radius: 20px;
 }
 
 .ml-auto{
