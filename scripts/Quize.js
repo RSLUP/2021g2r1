@@ -620,57 +620,57 @@ let futureCont = [
 let futurPerf = [
     {
         id: 1,
-        Question: "FuturPerfct",
-        answer: 1,
+        Question: "I ________ by then.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "will be leave",
+            "will have left",
+            "will leaving",
+            "will not leaving"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "Will you ________ by 8am?",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "have arriving",
+            "have be arrive",
+            "be arrive ",
+            "have arrived"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: " Sandu and Nishi will be exhausted. They ________ slept for 24 hours.",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "will not",
+            "will not have",
+            "will not be",
+            "will not has"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Where ________ gone?",
+        answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "will she have",
+            "is she has",
+            "she have",
+            "will be"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "He will have ________ all about it by Monday.",
+        answer: 2,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "forgetting",
+            "forgotten",
+            "be forgetting",
+            "forget"
         ]
     },
 
@@ -678,57 +678,57 @@ let futurPerf = [
 let futurPerfCont = [
     {
         id: 1,
-        Question: "future perfect Continues",
-        answer: 1,
+        Question: "My mom ________ for two days by the time I see her.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "has been travelling",
+            "will have been travelling",
+            "will has been travelling",
+            "will have travelling"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "Will you ________ here for ten years by the time of the Christmas party?",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "have been worked",
+            "have to work",
+            "have working",
+            "have been working"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "We ________ been waiting long.",
+        answer: 1,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "will not have",
+            "will have not",
+            "have not will",
+            "will "
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "It's a 24-hour relay. They'll only have been ________ for half the time by 6pm.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "ran",
+            "run",
+            "running",
+            "runs"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "Won't they ________ travelling for two weeks by then?",
+        answer: 1,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "have been",
+            "had been",
+            "has been",
+            "having"
         ]
     },
 
