@@ -57,8 +57,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    z-index: 1;
-    /* backdrop-filter: blur(14px) saturate(80%); */
+    z-index: 3;
     background-color: rgba(1, 11, 29, 0.75);
 }
 
@@ -151,8 +150,8 @@
     background: none;
 }
 #quize-question .quiz-body .que-text{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 400;
     color: rgb(90, 90, 90);
 }
 #quize-question .option-list{
@@ -166,8 +165,8 @@
     border-radius: 25px;
     padding: 8px 22px;
     margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: 360;
+    font-size: 17px;
+    font-weight: 350;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,17 +270,21 @@
 }
 #quiz-result .result-footer .replay-btn,#quiz-result .exit-btn{
     width: 140px;
-    padding: 5px;
-    font-weight: 400;
-    color: rgb(26, 146, 150);
-    background-color: #fff;
-    border: 1px solid rgb(26, 146, 150);
-    border-radius: 5px;
+    font-size: 16px;
+    background: linear-gradient(145deg, #CACCCF, #FFFFFF);
+    color: rgb(10, 97, 97);
+    border-radius: 15px;
+    border: solid rgb(10, 97, 97);
+    box-shadow: 6.91px 6.91px 15px #86888A, -6.91px -6.91px 15px #FFFFFF;
+    padding: 3px 15px;
+    text-align: center;
     cursor: pointer;
 }
 #quiz-result .replay-btn:hover, #quiz-result .exit-btn:hover{
-    color: white;
-    background: rgb(26, 146, 150);
+    background: #0a6161;
+    box-shadow: inset 9.91px 9.91px 18px #095252, inset -9.91px -9.91px 18px #0C7070;
+    color: #ffffff;
+    border: solid #CACCCF;
 }
 
 
@@ -289,8 +292,10 @@
 
 body{
     background-image: linear-gradient(to top right,#1f2222, #1f8787);
-    background-repeat: no-repeat;
-    height: 100%;
+    /* background-repeat: no-repeat;
+    height: 100%; */
+    background-attachment: fixed;
+    background-position: 0% 100%;
 }
 
 .body-part{
@@ -302,7 +307,7 @@ body{
     width: 0px;
 }
 .body-part .body-title{
-    padding: 50px 50px 0 50px;
+    padding: 23px 50px 0 50px;
     display: flex;
 }
 .body-part .title-logo {
@@ -371,6 +376,8 @@ body{
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -424,8 +431,7 @@ body{
         margin: auto;
     }
     .body-part{
-        max-height: 100%;
-        overflow-y: visible;
+        max-height: 100vh; 
     }
     .body-part .card{    
         padding: 8px;
@@ -436,6 +442,9 @@ body{
     }
     .body-part .body-title{
         padding: 40px 0 0 0;
+    }
+    .footer{
+        position: relative;
     }
 }
 
