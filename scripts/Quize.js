@@ -2,21 +2,19 @@
 let activeQuize;
 let quizeName;
 let list = $(".body-part .card");
+
+// when user click Quze Button
 for(let j=0; j<list.length; j++){
     list[j].onclick = function(){
         activeQuize = j;
         quizeName = $(".body-part .card-title")[j].innerHTML;
-        console.log(quizeName);
+        $(".quizes-wrapper").css("display", "flex");
+        $(window).scrollTop(0);
+        $("body").css("overflow", "hidden");
+        $(".body-part, #quiz, .footer").css("pointer-events", "none");
     }
 }
 
-// when user click Quze Button
-$(".body-part .card").on("click", function (){
-    $(".quizes-wrapper").css("display", "flex");
-    $(window).scrollTop(0);
-    $("body").css("overflow", "hidden");
-    $(".body-part, #quiz, .footer").css("pointer-events", "none");
-});
 // when user click close button in rules window or Exit button in Result window
 $(".quizes-wrapper #quize-rules .btn-close, #quiz-result .exit-btn").on("click", function(){
     $("#quize-rules").css("display", "block");
@@ -39,7 +37,7 @@ $(".quizes-wrapper #quize-rules .continue-btn").on("click", function(){
 let simplePres = [
     {
         id: 1,
-        Question: "01.Do you ______ chocolate milk?",
+        Question: " Do you ______ chocolate milk?",
         answer: 1,
         options: [
             "like",
@@ -50,7 +48,7 @@ let simplePres = [
     },
     {
         id: 2,
-        Question: "02.He ___ not want to go to the movies.",
+        Question: " He ___ not want to go to the movies.",
         answer: 2,
         options: [
             "do",
@@ -61,7 +59,7 @@ let simplePres = [
     },
     {
         id: 3,
-        Question: "03.My parents ______ in a two-bedroom apartment.",
+        Question: " My parents ______ in a two-bedroom apartment.",
         answer: 1,
         options: [
             "live",
@@ -72,7 +70,7 @@ let simplePres = [
     },
     {
         id: 4,
-        Question: "04.You _____ so happy today!",
+        Question: " You _____ so happy today!",
         answer: 2,
         options: [
             "looks",
@@ -83,7 +81,7 @@ let simplePres = [
     },
     {
         id: 5,
-        Question: "05.They're not here. They _________ right now.",
+        Question: " They're not here. They _________ right now.",
         answer: 3,
         options: [
             "go to school",
@@ -97,7 +95,7 @@ let simplePres = [
 let presntCont = [
     {
         id: 1,
-        Question: "01. _____ they coming over for dinner?",
+        Question: " _____ they coming over for dinner?",
         answer: 2,
         options: [
             "Is",
@@ -108,7 +106,7 @@ let presntCont = [
     },
     {
         id: 2,
-        Question: "02.I _____ my dinner right now.",
+        Question: " I _____ my dinner right now.",
         answer: 3,
         options: [
             "eat",
@@ -119,7 +117,7 @@ let presntCont = [
     },
     {
         id: 3,
-        Question: "03.They are _____ a new shopping mall downtown.",
+        Question: " They are _____ a new shopping mall downtown.",
         answer: 1,
         options: [
             "opening",
@@ -130,7 +128,7 @@ let presntCont = [
     },
     {
         id: 4,
-        Question: "04.I _____ at the hair salon until September.",
+        Question: " I _____ at the hair salon until September.",
         answer: 3,
         options: [
             "work",
@@ -141,7 +139,7 @@ let presntCont = [
     },
     {
         id: 5,
-        Question: "05.Why ________ playing football tomorrow?",
+        Question: " Why ________ playing football tomorrow?",
         answer: 3,
         options: [
             "he not is",
@@ -155,7 +153,7 @@ let presntCont = [
 let presntPerf = [
     {
         id: 1,
-        Question: "01.We _____ never eaten Mexican food.",
+        Question: " We _____ never eaten Mexican food.",
         answer: 2,
         options: [
             "is",
@@ -166,7 +164,7 @@ let presntPerf = [
     },
     {
         id: 2,
-        Question: "02.They___ gone to a rock concert.",
+        Question: " They___ gone to a rock concert.",
         answer: 3,
         options: [
             "'s",
@@ -177,7 +175,7 @@ let presntPerf = [
     },
     {
         id: 3,
-        Question: "03.Lindsay _____ not been to France.",
+        Question: " Lindsay _____ not been to France.",
         answer: 1,
         options: [
             "has",
@@ -188,7 +186,7 @@ let presntPerf = [
     },
     {
         id: 4,
-        Question: "04.Andrea has _____ her umbrella.",
+        Question: " Andrea has _____ her umbrella.",
         answer: 3,
         options: [
             "forget",
@@ -199,7 +197,7 @@ let presntPerf = [
     },
     {
         id: 5,
-        Question: "05.The children ________ the lost puppy.",
+        Question: " The children ________ the lost puppy.",
         answer: 3,
         options: [
             "have find",
@@ -213,7 +211,7 @@ let presntPerf = [
 let presPerfCont = [
     {
         id: 1,
-        Question: "01.It has _____ snowing a lot this week.",
+        Question: " It has _____ snowing a lot this week.",
         answer: 2,
         options: [
             "be",
@@ -224,7 +222,7 @@ let presPerfCont = [
     },
     {
         id: 2,
-        Question: "02.Rick _____ been studying hard this semester.",
+        Question: " Rick _____ been studying hard this semester.",
         answer: 1,
         options: [
             "'s",
@@ -235,7 +233,7 @@ let presPerfCont = [
     },
     {
         id: 3,
-        Question: "03.I'm tired because I _____ been working out.",
+        Question: " I'm tired because I _____ been working out.",
         answer: 3,
         options: [
             "'ve",
@@ -246,7 +244,7 @@ let presPerfCont = [
     },
     {
         id: 4,
-        Question: "04.We have been watching TV _____ we had dinner",
+        Question: " We have been watching TV _____ we had dinner.",
         answer: 2,
         options: [
             "for",
@@ -257,7 +255,7 @@ let presPerfCont = [
     },
     {
         id: 5,
-        Question: "Did you know he's been teaching German _____ fifteen years?",
+        Question: " Did you know he's been teaching German _____ fifteen years?",
         answer: 3,
         options: [
             "before",
@@ -767,8 +765,9 @@ function displayQuesion(n){
         <h2>Question ${quizes[activeQuize][n].id} / 5</h2>
     `);
     $("#quize-question .quiz-body").html(`
-    <div class="que-text">
-        <span>${quizes[activeQuize][n].Question}</span>
+    <div class="que-text d-flex">
+        <span class="me-2">0${quizes[activeQuize][n].id}.</span>
+        <span class="me-1">${quizes[activeQuize][n].Question}</span>
     </div>
     <div class="option-list">
         <div class="li">
