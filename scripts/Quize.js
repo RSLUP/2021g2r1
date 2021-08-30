@@ -1213,7 +1213,7 @@ function getUserSelection(ans){
         }
     }
 };
-// All Quizes type name Array
+
 
 // All 5 type of Messages related to user scores 
 let ResultMsg = [
@@ -1237,15 +1237,15 @@ let ResultMsg = [
     },
     {
         // Massage for 3 correct answer
-        imgSrc: "/images/QuizeLogo/notEnough.png",
-        msg: "Not Enough!",
-        subMsg: `You must work hard for `
+        imgSrc: "/images/QuizeLogo/bronze.png",
+        msg: "Congratulations!",
+        subMsg: `You earned E-net Bronze Trophy for `
     },
     {
         // Massage for 4 correct answer
-        imgSrc: "/images/QuizeLogo/silver.jpg",
-        msg: "Good!",
-        subMsg: `You earned E-net Silver Badge for `
+        imgSrc: "/images/QuizeLogo/silver.png",
+        msg: "Congratulations!",
+        subMsg: `You earned E-net Silver Trophy for `
     },
     {
         // Massage for 5 correct answer
