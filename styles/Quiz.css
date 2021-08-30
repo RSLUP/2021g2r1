@@ -76,7 +76,7 @@
 
 /* common CSS for all 3 quizes app box */
 .quize-box{
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,6 +97,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
     padding: 0 15px 0 35px;
     font-size: 20px;
     font-weight: 600;
@@ -130,7 +131,7 @@
 #quize-question .quiz-title{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 70px;
     padding: 0 30px;
     background: rgb(255, 255, 255);
@@ -140,10 +141,13 @@
 }
 
 #quize-question .quiz-title h2{
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
     color: rgba(32,140,140,1);
     padding-top: 10px;
+}
+#quize-question .quiz-title h2:nth-child(1){
+    color: black;
 }
 #quize-question .quiz-body{
     padding: 25px 30px 20px 30px;
@@ -299,8 +303,6 @@ body{
 }
 
 .body-part{
-    max-height: calc(100vh - 119px);
-    overflow-y: auto;
     letter-spacing: 1px;
 }
 .body-part::-webkit-scrollbar{
@@ -376,8 +378,7 @@ body{
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0px;
+    position: relative;
     width: 100%;
 }
 
@@ -430,9 +431,6 @@ body{
         max-width: 40%;
         margin: auto;
     }
-    .body-part{
-        max-height: 100vh; 
-    }
     .body-part .card{    
         padding: 8px;
         margin-bottom: 10px;
@@ -443,9 +441,7 @@ body{
     .body-part .body-title{
         padding: 40px 0 0 0;
     }
-    .footer{
-        position: relative;
-    }
+
 }
 
 @media only screen and (max-width: 660px) {
