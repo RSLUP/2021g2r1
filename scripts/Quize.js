@@ -17,11 +17,12 @@ for(let j=0; j<list.length; j++){
 }
 
 // when user click close button in rules window or Exit button in Result window
-$(".quizes-wrapper #quize-rules .btn-close, #quiz-result .exit-btn").on("click", function(){
+$(".quizes-wrapper #quize-rules .btn-close, #quize-question .btn-close, #quiz-result .exit-btn").on("click", function(){
     $("#quize-rules").css("display", "block");
     $(".quizes-wrapper #quiz-result").css("display", "none");
-    $("body").css("overflow", "scroll");
+    $("#quize-question").css("display", "none");
     $(".quizes-wrapper").css("display", "none");
+    $("body").css("overflow", "scroll");
     $(".body-part, #quiz, .footer").css("pointer-events", "visible");
     totalPoint = 0;
     QuesCount = 0;
@@ -31,6 +32,7 @@ $(".quizes-wrapper #quize-rules .btn-close, #quiz-result .exit-btn").on("click",
 $(".quizes-wrapper #quize-rules .continue-btn").on("click", function(){
     $("#quize-rules").css("display", "none");
     $("#quize-question").css("display", "block");
+    $("#quize-question .quiz-title h2:nth-child(2)").html(`${quizeName}`);
     displayQuesion(0);
 });
 
@@ -1170,9 +1172,9 @@ function displayQuesion(n){
     // Before user select one of answer next button not display
     $(".quizes-wrapper #quize-question .next-btn").css("display", "none");
     
-    $("#quize-question .quiz-title").html(`
-        <h2>Question ${quizes[activeQuize][n].id} / 5</h2>
-    `);
+    // $("#quize-question .quiz-title").html(`
+    //     <h2>Question ${quizes[activeQuize][n].id} / 5</h2>
+    // `);
     $("#quize-question .quiz-body").html(`
     <div class="que-text d-flex">
         <span class="me-2">0${quizes[activeQuize][n].id}.</span>
@@ -1197,7 +1199,7 @@ function displayQuesion(n){
 
 // This function is use to lisent user choise.and get nessosary reaction for that.
 function getUserSelection(ans){
-    let option = document.querySelectorAll("div.li");
+    let option = document.querySelectorAll("#quize-question .quiz-body div.li");
     for(let i = 0; i < option.length; i++){
         option[i].onclick = function(){
             $("#quize-question .option-list").css("pointer-events", "none");
@@ -1213,7 +1215,7 @@ function getUserSelection(ans){
         }
     }
 };
-// All Quizes type name Array
+
 
 // All 5 type of Messages related to user scores 
 let ResultMsg = [
@@ -1237,15 +1239,15 @@ let ResultMsg = [
     },
     {
         // Massage for 3 correct answer
-        imgSrc: "/images/QuizeLogo/notEnough.png",
-        msg: "Not Enough!",
-        subMsg: `You must work hard for `
+        imgSrc: "/images/QuizeLogo/bronze.png",
+        msg: "Congratulations!",
+        subMsg: `You earned E-net Bronze Trophy for `
     },
     {
         // Massage for 4 correct answer
-        imgSrc: "/images/QuizeLogo/silver.jpg",
-        msg: "Good!",
-        subMsg: `You earned E-net Silver Badge for `
+        imgSrc: "/images/QuizeLogo/silver.png",
+        msg: "Congratulations!",
+        subMsg: `You earned E-net Silver Trophy for `
     },
     {
         // Massage for 5 correct answer
