@@ -271,57 +271,57 @@ let presPerfCont = [
 let simplePast = [
     {
         id: 1,
-        Question: "simple Past",
+        Question: "I _____ to the mall after school.",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "went",
+            "gone",
+            "goed",
+            "goes"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "My brother _____ a bear an hour ago.",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "seen",
+            "sees",
+            "see",
+            "saw"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "_____ Mike visit his grandmother last night?",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "Are",
+            "Did",
+            "Does",
+            "do"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "Alex did not _____ last weekend.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "working",
+            "worked",
+            "work",
             "None of these"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "_____ Judy and Liz at last month's meeting?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "Was",
+            "is",
+            "Are",
+            "Were"
         ]
     },
 
@@ -329,57 +329,57 @@ let simplePast = [
 let pastCont = [
     {
         id: 1,
-        Question: "Past Continues",
+        Question: "My brother and sister _____ playing tennis at 11am yesterday.",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "were",
+            "was",
+            "are",
             "None of these"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "_____ you still working at 7pm last night?",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "did",
+            "are",
+            "was",
+            "Were"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: " At 8.30am today I _____ driving to work.",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "Were",
+            "was",
+            "are",
+            "did"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "We _____ sleeping when the police came.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "won't",
+            "was",
+            "weren't",
             "None of these"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "Why _____ he having lunch at 4pm?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "were",
+            "doing",
+            "does",
+            "was"
         ]
     },
 
@@ -387,57 +387,57 @@ let pastCont = [
 let pastPerf = [
     {
         id: 1,
-        Question: "past Perfect",
+        Question: "We ________ finished eating dinner.",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "had not",
+            "not had",
+            "'d had not",
             "None of these"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "Had they _____ to her before?",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "spoked",
+            "spoke",
+            "speaked",
+            "spoken"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "You _____ not left yet.",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "would had",
+            "'d",
+            "would",
+            "have"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: " I had never _____ her before.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "see",
+            "saw",
+            "seen",
             "None of these"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "We arrived at 8:05, but the train _____ already left.",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "has",
+            "have",
+            "are",
+            "had"
         ]
     },
 
@@ -445,57 +445,57 @@ let pastPerf = [
 let pastPerfCont = [
     {
         id: 1,
-        Question: "past perfect Continus",
+        Question: "My dad ________ smoking in the garage.",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "had been",
+            "had",
+            "has",
             "None of these"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
+        Question: "The printer ________ working well.",
         answer: 4,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "had not",
+            "have not",
+            "hadn't",
+            "had not been"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "Had the players _____ playing by the rules?",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "have",
+            "been",
+            "be",
+            "hadn't"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
+        Question: "She ________ expecting the worst.",
         answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "had",
+            "had being",
+            "'d been",
             "None of these"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "Had the teachers ________ before the strike?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "been work",
+            "was working",
+            "working",
+            "been working"
         ]
     },
 
