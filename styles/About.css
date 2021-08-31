@@ -167,8 +167,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 7px solid #fff;
     margin-top: -80px;
@@ -184,7 +184,7 @@ body{
 .main-text h2{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 0 20px;
 }
 .main-text p{
@@ -193,7 +193,7 @@ body{
 }
 .items ul{
   text-align: center;
-  margin: auto;
+  margin:0cm;
   padding: 10px;
 }
 
@@ -220,6 +220,16 @@ body{
 .profile-area h2, .profile-area p{
   color: rgb(16, 82, 82);
 }
+
+.socials ul li{
+  
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  
+
+}
+
 /*--footer*/
 .footer{
   background-color: rgba(0, 0, 0, 0.6);
