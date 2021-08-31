@@ -147,7 +147,7 @@ body{
     text-decoration: none;
     
 }
-
+/* This CSS for newly added menu button in modile mode */
 .body-container .menu .menu-hide{
     display: none;
 }
