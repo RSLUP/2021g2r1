@@ -797,57 +797,57 @@ let noun = [
 let verb = [
     {
         id: 1,
-        Question: "verb",
+        Question: "which can be called a sentence? <br> A) wait!<br> B) why? ",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "A only",
+            "B only",
+            "A and B",
             "None of these"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "My computer brokebdownn, so I ____ continue my work",
+        answer: 2,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "cannot be",
+            "could not",
+            "can't",
+            "couldn't been"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "A verb always has<br>A) an object<br>B) a subject",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
-        ]
-    },
-    {
-        id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
-        options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "A only",
+            "B only",
+            "A and B",
             "None of these"
         ]
     },
     {
-        id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        id: 4,
+        Question: "It ____ drizzling  throughout the previous day",
+        answer: 1,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "kept",
+            "keeps",
+            "keep",
+            "keeping"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Have you ____ your lost dog yet?",
+        answer: 2,
+        options: [
+            "find",
+            "found",
+            "finds",
+            "finded"
         ]
     },
 
