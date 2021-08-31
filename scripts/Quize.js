@@ -1087,57 +1087,57 @@ let preposi= [
 let conjuc = [
     {
         id: 1,
-        Question: "conjuction",
-        answer: 1,
+        Question: "Would you rather have cheese _____ bologna on your sandwich?",
+        answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "For",
+            "Nor",
+            "Or",
+            "So"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: " _________ he claims that he is innocent, everyone knows he is guilty",
+        answer: 1,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "While",
+            "Now that",
+            "In order that",
+            "Until"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "_______ my mother _________my father want me to be a lawyer.",
+        answer: 4,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "either…or",
+            "Not only… also",
+            "Neither…nor",
+            "Both…and"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "You need to work harder; ________________, you'll get fired.",
+        answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "otherwise",
+            "moreover",
+            "instead",
+            "however"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "which sentence is written correctly?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "He enjoys swimming; yet he prefers to play golf.",
+            "He enjoys swimming yet he prefers to play golf.",
+            "He enjoys swimming, yet he prefers to play golf.",
+            "He enjoys swimming. yet he prefers to play golf."
         ]
     },
 
