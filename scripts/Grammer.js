@@ -8,6 +8,10 @@ dots[currIndex-1].className += " active";
 
 function currentSlide(n) {
     showSlides(currIndex = n);
+    if($(".body-container .menu .menu-hide").css("display") == "flex"){
+        hideMenu();
+        $(window).scrollTop(0);
+    }
 }
 
 
@@ -22,3 +26,17 @@ function showSlides(n) {
     slides[currIndex-1].style.display = "block";
     dots[currIndex-1].className += " active";
 }
+
+function showMenu(){
+    $(".body-container .menu").css("left", "0");
+}
+function hideMenu(){
+    $(".body-container .menu").css("left", "-100%");
+}
+$(window).resize(function(){
+    if($(this).width() >= 768){
+        showMenu();
+    }else{
+        hideMenu();
+    }
+});

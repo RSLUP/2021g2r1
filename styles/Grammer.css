@@ -147,11 +147,17 @@ body{
     text-decoration: none;
     
 }
-
+/* This CSS for newly added menu button in modile mode */
+.body-container .menu .menu-hide{
+    display: none;
+}
+.body-container .menu-show{
+    display: none;
+}
 /*--media quaries--*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .form{
         max-width: 300px;
         margin: auto;
@@ -165,7 +171,57 @@ body{
     td , th{
         padding: 4px;
     }
-    
+    /* tensese menu Css on mobile verision */
+    .body-container .slide{
+        margin-top: 30px;
+    }
+    .body-container .menu{
+        z-index: 3;
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all .5s;
+    }
+    .body-container .menu-show{
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        
+    }
+    .body-container .menu .menu-hide{
+        display: flex;
+        justify-content: flex-end;
+    }
+    :is(.menu-show, .menu-hide) .button{
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 8px;
+        border-radius: 0 30px 30px 0;
+        background: #1f22228c;
+        cursor: pointer;
+    }
+    :is(.menu-hide, .menu-show) .icon{
+        height: 35px;
+        width: 35px;
+        border: 2px solid transparent;
+        text-align: center;
+        font-size: 30px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.596);
+        border-color:rgba(255, 255, 255, 0.596);
+        border-radius: 50%;
+    }
+    :is(.menu-hide, .menu-show) .icon:hover{
+        border: 3px solid;
+        color: #ffffff;
+        border-color: #ffffff;;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -189,6 +245,7 @@ body{
         font-size: medium;
         
     }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
