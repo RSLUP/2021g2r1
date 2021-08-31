@@ -61,8 +61,19 @@
   <!--Body part of the Grammer Page-->
   <div class="body-container">
     <div class="container">
+      <div class="menu-show">
+        <label class="button" onclick="showMenu()">
+          <p class="mb-0 me-2">Other Tenses</p>
+          <span class="icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        </label>
+      </div>
       <div class="row mt-3">
         <div class="col-md-3 col-sm-12 col-12 menu">
+          <div class="menu-hide">
+            <label class="button" onclick="hideMenu()">
+              <span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            </label>
+          </div>
           <ul>
             <li class="dot" onclick="currentSlide(1)">Simple Present</li>
             <li class="dot" onclick="currentSlide(2)">Simple Past</li>
@@ -78,7 +89,7 @@
             <li class="dot" onclick="currentSlide(12)">Future Perfect Continuous</li>
           </ul>
         </div>
-        <div class="col-md-9 col-sm-12 col-12 p-md-5 p-sm-2">
+        <div class="col-md-9 col-sm-12 col-12 mt-md-0 mt-sm-5 mt-5 p-md-5 p-sm-2">
           <div id="simplepresent" class="slide">
             <!-- Simple Present tika methana type krnna -->
             <h1>Simple Present</h1>
@@ -1626,14 +1637,14 @@
       </div>
     </div>
   </footer>
-  <!-- other part of javascripts -->
-  <script src="../scripts/Grammer.js"></script>
+
+  
   <!-- jquery JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="/scripts/jquery.js"></script>
   <!--Bootstrap JS-->
   <script src="../scripts/bootstrap.bundle.js"></script>
+    <!-- other part of javascripts -->
+  <script src="../scripts/Grammer.js"></script>
 </body>
 
 </html>
