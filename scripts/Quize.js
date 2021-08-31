@@ -855,57 +855,57 @@ let verb = [
 let adVerb = [
     {
         id: 1,
-        Question: "adverb",
-        answer: 1,
+        Question: "Leon's car goes ______ than benjamin's",
+        answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "more fast",
+            "fastly",
+            "faster",
+            "fast"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "Which is the correct sentence?",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "Really lucy likes pancakes.",
+            "lucy likes pancakes really.",
+            "lucy really likes pancakes.",
+            "lucy likes really pancakes."
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "select wrong one?",
+        answer: 4,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "everyday - time",
+            "almost - degree",
+            "sometimes - frequency",
+            "yet - manner"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Identify the adverb in the following sentence<br>I quickly remembered the definition for an adverb.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "remembered",
+            "quickly",
+            "definition",
+            "definition"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "which is a adverb of manner ?",
+        answer: 1,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "hard",
+            "near",
+            "never",
+            "now"
         ]
     },
 
