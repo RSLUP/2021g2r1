@@ -807,57 +807,57 @@ let noun = [
 let verb = [
     {
         id: 1,
-        Question: "verb",
+        Question: "which can be called a sentence? <br> A) wait!<br> B) why? ",
         answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "A only",
+            "B only",
+            "A and B",
             "None of these"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "My computer brokebdownn, so I ____ continue my work",
+        answer: 2,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "cannot be",
+            "could not",
+            "can't",
+            "couldn't been"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
+        Question: "A verb always has<br>A) an object<br>B) a subject",
         answer: 2,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
-        ]
-    },
-    {
-        id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
-        options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "A only",
+            "B only",
+            "A and B",
             "None of these"
         ]
     },
     {
-        id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        id: 4,
+        Question: "It ____ drizzling  throughout the previous day",
+        answer: 1,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "kept",
+            "keeps",
+            "keep",
+            "keeping"
+        ]
+    },
+    {
+        id: 5,
+        Question: "Have you ____ your lost dog yet?",
+        answer: 2,
+        options: [
+            "find",
+            "found",
+            "finds",
+            "finded"
         ]
     },
 
@@ -865,57 +865,57 @@ let verb = [
 let adVerb = [
     {
         id: 1,
-        Question: "adverb",
-        answer: 1,
+        Question: "Leon's car goes ______ than benjamin's",
+        answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "more fast",
+            "fastly",
+            "faster",
+            "fast"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "Which is the correct sentence?",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "Really lucy likes pancakes.",
+            "lucy likes pancakes really.",
+            "lucy really likes pancakes.",
+            "lucy likes really pancakes."
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "select wrong one?",
+        answer: 4,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "everyday - time",
+            "almost - degree",
+            "sometimes - frequency",
+            "yet - manner"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Identify the adverb in the following sentence<br>I quickly remembered the definition for an adverb.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "remembered",
+            "quickly",
+            "definition",
+            "definition"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "which is a adverb of manner ?",
+        answer: 1,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "hard",
+            "near",
+            "never",
+            "now"
         ]
     },
 
@@ -1097,57 +1097,57 @@ let preposi= [
 let conjuc = [
     {
         id: 1,
-        Question: "conjuction",
-        answer: 1,
+        Question: "Would you rather have cheese _____ bologna on your sandwich?",
+        answer: 3,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "For",
+            "Nor",
+            "Or",
+            "So"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: " _________ he claims that he is innocent, everyone knows he is guilty",
+        answer: 1,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "While",
+            "Now that",
+            "In order that",
+            "Until"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "_______ my mother _________my father want me to be a lawyer.",
+        answer: 4,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "either…or",
+            "Not only… also",
+            "Neither…nor",
+            "Both…and"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "You need to work harder; ________________, you'll get fired.",
+        answer: 1,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "otherwise",
+            "moreover",
+            "instead",
+            "however"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "which sentence is written correctly?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "He enjoys swimming; yet he prefers to play golf.",
+            "He enjoys swimming yet he prefers to play golf.",
+            "He enjoys swimming, yet he prefers to play golf.",
+            "He enjoys swimming. yet he prefers to play golf."
         ]
     },
 
