@@ -218,6 +218,10 @@ display: none;
         color: #ffffff;
         border-color: #ffffff;;
     }
+    /* quiz butoo CSS */
+    .quiz-contain{
+        margin-bottom: 3rem;
+    }
 }
 
   @media only screen and (max-width: 660px) {
@@ -395,7 +399,7 @@ div img{
     
 }
 
-.quiz button{ 
+.quiz-contain button{ 
     color: rgb(10, 97, 97);
     background: linear-gradient(135deg, #f8f8f8, #FFFFFF);
     padding: 10px 20px;
@@ -405,7 +409,7 @@ div img{
     box-shadow: 0px 2px 5px #000000;
     align-self: center;
 }
-.quiz button:hover{
+.quiz-contain button:hover{
     background:linear-gradient(135deg, #1f8787, #0c3636);
     color: rgb(255, 255, 255);
     border: solid rgb(255, 255, 255);

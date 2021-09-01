@@ -27,6 +27,7 @@ function showSlides(n) {
     dots[currIndex-1].className += " active";
 }
 
+// function for moblid version other lesson button
 function showMenu(){
     $(".body-container .menu").css("left", "0");
 }
@@ -40,3 +41,8 @@ $(window).resize(function(){
         hideMenu();
     }
 });
+
+function getQuiz(n){
+    sessionStorage.setItem("quizeNum", n);
+    location.href = "Quiz.html";
+}

@@ -1,3 +1,14 @@
+window.onload = function(){
+    activeQuize = sessionStorage.getItem("quizeNum");
+    quizeName = $(".body-part .card-title")[activeQuize].innerHTML;
+    if(activeQuize != null){
+        $(".quizes-wrapper").css("display", "flex");
+        $(window).scrollTop(0);
+        $("body").css("overflow", "hidden");
+        $(".body-part, #quiz, .footer").css("pointer-events", "none");
+    }
+    sessionStorage.clear();
+}
 
 let activeQuize;
 let quizeName;
@@ -8,7 +19,6 @@ for(let j=0; j<list.length; j++){
     list[j].onclick = function(){
         activeQuize = j;
         quizeName = $(".body-part .card-title")[j].innerHTML;
-        console.log(quizeName);
         $(".quizes-wrapper").css("display", "flex");
         $(window).scrollTop(0);
         $("body").css("overflow", "hidden");

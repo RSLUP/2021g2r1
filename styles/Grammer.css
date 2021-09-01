@@ -94,11 +94,10 @@ body{
     background-color: #1f8888;
     border-radius: 12px;
 }
-
-
 .slide{
     display: none;
 }
+
 
 /*--footer*/
 .footer{
@@ -154,7 +153,33 @@ body{
 .body-container .menu-show{
     display: none;
 }
+
+/* Quize button Css */
+.quiz-contain{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    
+}
+
+.quiz-contain button{ 
+    color: rgb(10, 97, 97);
+    background: linear-gradient(135deg, #f8f8f8, #FFFFFF);
+    padding: 10px 20px;
+    color: rgb(10, 97, 97);
+    border-radius: 20px;
+    border: solid rgb(10, 97, 97);
+    box-shadow: 0px 2px 5px #000000;
+    align-self: center;
+}
+.quiz-contain button:hover{
+    background:linear-gradient(135deg, #1f8787, #0c3636);
+    color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+}
+
 /*--media quaries--*/
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
