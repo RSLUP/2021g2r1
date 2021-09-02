@@ -51,3 +51,23 @@ h3,h4,h5,h6{
     color: white;
 
 }
+
+/* future tenses CSS */
+.future ul li{
+    color: rgb(233, 223, 136);
+}
+.future h1{
+    color: rgb(161, 241, 252);
+    font-weight: bold;
+    font-style: italic;
+}
+.future h6{
+    color: rgb(160, 252, 217);
+}
+.future table th,.future table td{
+    color: rgb(216, 216, 216);
+    border-color: rgba(129, 129, 129, 0.479);
+}
+.future table tr{
+    background-color: rgba(0, 0, 0, 0.329);
+}

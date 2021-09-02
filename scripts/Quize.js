@@ -1231,7 +1231,7 @@ function getUserSelection(ans){
 let ResultMsg = [
     {
         // Massage for 0 correct answer
-        imgSrc: "/images/QuizeLogo/notEnough.png",
+        imgSrc: "/images/QuizeLogo/duck.gif",
         msg: "Oops!",
         subMsg: `You must work hard for `
     },
