@@ -35,7 +35,7 @@ function hideMenu(){
     $(".body-container .menu").css("left", "-100%");
 }
 $(window).resize(function(){
-    if($(this).width() >= 768){
+    if($(this).width() > 752){
         showMenu();
     }else{
         hideMenu();
