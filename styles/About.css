@@ -1,15 +1,21 @@
-body {
+* {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
-  }
+}
+body{
+  background-color: #1e3f75;
+    background-image: radial-gradient(at 0% 20%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(220.00, 0%, 0%) 0, transparent 55%);
+}
 
 /*nav bar*/
 #logo{
-  width: 40px;
+  width: 72px;
   height: 40px;
   margin: 0px 20px ;
   padding: 0;
+  border-radius: 20px;
 }
 
 .ml-auto{
@@ -53,9 +59,30 @@ body {
   padding-top: 20px;
   
   
-  }
+}
+.who-we-are{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 45, 45, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.team-btn NavLink{
+  color: rgba(32,140,140,1);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 16px;
+  width: 130px;
+  border-color: rgba(32,140,140,1);
+  margin-top: 20px; 
+}
+.team-btn NavLink:hover{
+  background-color: rgba(32,140,140,1);
+  border-color: rgba(32,140,140,1);
+  border-color: white;
+}
 #about h2{
-  color: rgb(224, 207, 207);
+  color: rgb(255, 255, 255);
   font-weight: bolder ;
 
 }
@@ -97,10 +124,7 @@ body {
   opacity: 1;
 
 }
-.items:after {
-  content: "";
-  display: inline;
-}
+
 .items{
     overflow: hidden;
     background-color: rgb(7, 20, 18);
@@ -123,17 +147,13 @@ body {
 #aboutus h4{
   font-weight: bold;
 }
-
-.profile-area{
-    padding:30px 30px;
-
-}
 .card{
-    box-shadow: 0 0 40px rgb(155, 126, 126);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 25px;
     height: 400px;
     width: 300px;
+    margin: auto;
 }
 .img1 img{
     height: 150px;
@@ -147,8 +167,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 7px solid #fff;
     margin-top: -80px;
@@ -164,7 +184,7 @@ body {
 .main-text h2{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 0 20px;
 }
 .main-text p{
@@ -173,13 +193,41 @@ body {
 }
 .items ul{
   text-align: center;
-  margin: auto;
+  margin:0cm;
   padding: 10px;
 }
 
 .items ul li{
   list-style: none;
   display: inline-block;
+}
+
+.slide{
+  padding: 0;
+  padding: 0;
+  margin: auto;
+}
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-area{
+  flex: 1 1 33%;
+  padding: 0px 10px;
+}
+.profile-area h2, .profile-area p{
+  color: rgb(16, 82, 82);
+}
+
+.socials ul li{
+  
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  
+
 }
 
 /*--footer*/
@@ -189,12 +237,9 @@ body {
   bottom: 0px;
   width: 100%;
 }
-
 .form-control{
   border-right: none;
 }
-
-
 .send-email{
 background-color: transparent;
 margin-top: 0 !important;
@@ -220,7 +265,9 @@ margin-top: 0 !important;
 .footer-page-links ul li a:hover,.social-media ul li a:hover{
   color: rgba(32,140,140,1);
 }
-
+.input-group-append button{
+  width: auto;
+}
 
 .footer-page-links{
   font-size: 15px;
@@ -247,8 +294,100 @@ margin-top: 0 !important;
       margin: auto;
   }
 }
+@media only screen and (max-width: 440px){
+  
+  .message{
+      top: 15%;
+      left: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  .btn-set{
+      top: 35%;
+      left: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 5px;
+  }
+  .btn-set ul li{
+      text-align: center;
+     padding: 8px; 
+  }
+  .btn-set ul{
+      margin: 0;
+      padding: 0;
+      font-size: 2px;
+  }
+  .col1{
+      flex: 100%;
+      max-width: 100%;
 
+  }
+  .row1{
+      flex: 100%;
+      max-width: 100%;
+  }
+  
+  #g-btn button,#v-btn button,#s-btn button,#q-btn button{
+      width: 150px;
+      border-radius: 25px;
+      font-size: 20px;
+      padding: 3px;
+  }
+  #g-btn button{
+      background-color: rgba(32,140,140,1);
+  }
+  #g-btn button:hover{
+      background-color: white;
+  }
+  #v-btn button{
+      background-color: transparent;
+  }
 
+}
+
+@media screen  and (max-width: 576px) and (min-width: 440px){
+  .message{
+      left: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px 5px;
+  }
+  .btn-set{
+      left: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  }
+  .btn-set ul li{
+      text-align: center;
+  }
+  .btn-set ul{
+      margin: 0;
+      padding: 0;
+  }
+  .row1 ul li{
+      margin: 0;
+  }
+  .col1 ul li{
+      margin: 0;
+      padding-left: 7px;
+  }
+  
+
+}
+
+/*media quaries- profile card*/
+@media screen  and (max-width: 756px){
+  .card-box{
+    margin-bottom: 20px;
+  }
+}
 
 
 

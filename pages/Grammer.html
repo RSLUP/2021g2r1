@@ -26,7 +26,7 @@
   <header id="grammer">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img id="logo" src="/images/Elogo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="/images/nav-logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
               <a id="nav-home" class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a id="nav-grammer" class="nav-link" href="#grammer">Grammer</a>
+              <a id="nav-grammer" class="nav-link" href="#grammer">Grammar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/Vocabulary.html">Vocabulary</a>
@@ -61,8 +61,19 @@
   <!--Body part of the Grammer Page-->
   <div class="body-container">
     <div class="container">
+      <div class="menu-show">
+        <label class="button" onclick="showMenu()">
+          <p class="mb-0 me-2">Other Lessons</p>
+          <span class="icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        </label>
+      </div>
       <div class="row mt-3">
         <div class="col-md-3 col-sm-12 col-12 menu">
+          <div class="menu-hide">
+            <label class="button" onclick="hideMenu()">
+              <span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            </label>
+          </div>
           <ul>
             <li class="dot" onclick="currentSlide(1)">Simple Present</li>
             <li class="dot" onclick="currentSlide(2)">Simple Past</li>
@@ -78,7 +89,7 @@
             <li class="dot" onclick="currentSlide(12)">Future Perfect Continuous</li>
           </ul>
         </div>
-        <div class="col-md-9 col-sm-12 col-12 p-md-5 p-sm-2">
+        <div class="col-md-9 col-sm-12 col-12 mt-md-0 mt-sm-5 mt-5 p-md-5 p-sm-2">
           <div id="simplepresent" class="slide">
             <!-- Simple Present tika methana type krnna -->
             <h1>Simple Present</h1>
@@ -100,7 +111,7 @@
               </tr>
               <tr>
                 <td>He,She,It <br></td>
-                <td>plays</td>
+                <td>plays.</td>
               </tr>
             </table>
             <br>
@@ -144,12 +155,12 @@
               <tr>
                 <td>I,You,We,They<br></td>
                 <td>do not<br>don't <br></td>
-                <td>play</td>
+                <td>play.</td>
               </tr>
               <tr>
                 <td>He,She,It <br></td>
                 <td>does not<br>doesn't<br></td>
-                <td>play</td>
+                <td>play.</td>
               </tr>
             </table>
             <br>
@@ -179,43 +190,44 @@
             </table>
             <br>
             <h6>Here are the spelling rules:</h6><br>
-            <table>
+            <table class="pretable">
               <tr style="background-color: burlywood;">
                 <th>Silent e</th>
                 <th>Vowel + y</th>
                 <th>Constant + y</th>
                 <th>Verbs ending in o</th>
-                <th>Verbs ending in s,z,sh,tch,ch </th>
+                <th>Verbs ending in s, z, sh, tch, ch</th>
               </tr>
               <tr>
-                <td>close=close<strong style="color: brown;">s</strong></i>
-                  <br><br>
-                  note=note<strong style="color: brown;">s</strong></i>
+                <td>close<strong style="color: brown;">s</strong></i>
+                  <br>
+                  note<strong style="color: brown;">s</strong></i>
                 </td>
-                <td>play=play<strong style="color: brown;">s</strong></i>
-                  <br><br>
-                  say=say<strong style="color: brown;">s</strong></i>
+                <td>play<strong style="color: brown;">s</strong></i>
+                  <br>
+                  say<strong style="color: brown;">s</strong></i>
                 </td>
-                <td>study=stud<strong style="color: brown;">ies</strong></i>
-                  <br><br>
-                  marry=marr<strong style="color: brown;">ies</strong></i>
+                <td>stud<strong style="color: brown;">ies</strong></i>
+                  <br>
+                  marr<strong style="color: brown;">ies</strong></i>
                 </td>
-                <td>go=go<strong style="color: brown;">es</strong></i>
-                  <br><br>
-                  do=do<strong style="color: brown;">es</strong></i>
+                <td>go<strong style="color: brown;">es</strong></i>
+                  <br>
+                  do<strong style="color: brown;">es</strong></i>
                 </td>
-                <td>miss=miss<strong style="color: brown;">es</strong></i>
-                  <br><br>
-                  buzz=buzz<strong style="color: brown;">es</strong></i>
-                  <br><br>
-                  hatch=hatch<strong style="color: brown;">es</strong></i>
-                  <br><br>
-                  finish=finish<strong style="color: brown;">es</strong></i>
-                  <br><br>
-                  teach=teach<strong style="color: brown;">es</strong></i>
+                <td>miss<strong style="color: brown;">es</strong></i>
+                  <br>
+                  buzz<strong style="color: brown;">es</strong></i>
+                  <br>
+                  hatch<strong style="color: brown;">es</strong></i>
+                  <br>
+                  finish<strong style="color: brown;">es</strong></i>
+                  <br>
+                  teach<strong style="color: brown;">es</strong></i>
                 </td>
               </tr>
             </table>
+            <br>
 
 
           </div>
@@ -224,7 +236,7 @@
             <!-- Simple Past tika methana type krnna -->
 
             <h1>Simple Past</h1>
-            <br> <br>
+            <br>
 
             <p> The <b>simple past</b> is a verb tense that is used to talk about things that happened or existed before
               now. Imagine someone asks what your
@@ -492,23 +504,73 @@
             <!-- Simple Future tika methana type krnna -->
 
             <h1>Simple Future</h1>
-            <p>ytjytjytjytjtyjytjtyjtmgnmgjmgmthmhgm
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuemhmhgmhgmnfdhhetheth e h etth thrthgfnrtnr
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
-            <div style="width:80%; height: 500px">
-              <img src="" alt="img">
-            </div>
-            <p>dhygeygwuehw
-              ewuhcuhewuhceuwhcuiewhuchewucheuwhc
-              ewhuhcuewhcuhewuhcewuchuewhcuewytjytjhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuewhcuhewuchhewcuehwuchew
-              ewucheuhcuwehcuhewuchuewhcuehucheuheuchuehcue
-              hewuhcuewhuchewuchuehcuehucehuchewuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
+            <br>
+            <p> The simple future refers to a time later than now, and expresses facts or certainty.</p>
+                    <br>
+
+
+                    <h5>Here's the positive form (it's just 'will' + infinitive):</h5>
+
+                    <ul>
+                      <li>I will meet him later (I'll ..)</li>
+                      <li>You will come (you'll..)</li>
+                      <li>It will rain tomorrow (it'll)</li>
+                      <li>She will be late (she'll..)</li>
+                      <li>We will get married in September (we'll)</li>
+                      <li>They will cook dinner (they'll..)</li>
+                    </ul>
+                    <br><br>
+
+                    <p>                    The short form: 'll is very, very common, and is almost always used when speaking. It's really much more natural to say 'I'll' instead of 'I will'. Here's some help with the pronunciation:</p>
+
+                    <ul>
+                      <li>I'll meet him later</li>
+                      <li>You'll come</li>
+                      <li>She'll be late</li>
+                      <li>He'll help us later</li>
+                      <li>We'll get married in September</li>
+                    </ul>
+
+                    <br><br>
+                    <h5>Next, here's the negative form (just add 'not' - remember will not = won't):</h5>
+
+                    <ul>
+                      <li>I will not go (I won't ..)</li>
+                      <li>You will not be late (you won't ..)</li>
+                      <li>It will not snow tomorrow (it won't..)</li>
+                      <li>She will not get the job (she won't..)</li>
+                      <li>He will not pass the exam (he won't ..</li>
+                    </ul>
+
+                    <br><br>
+
+                    <h4>Finally, here's the question:</h4>
+                    <br>
+
+                    <h5>'yes/no' questions:</h5>
+                    <br>
+
+                    <ul>
+                      <li>Will I go?</li>
+                      <li>Will you come early?</li>
+                      <li>Will it be cold?</li>
+                      <li>Will she dance?</li>
+                      <li>Will we cook?</li>
+                    </ul>
+                    <br><br>
+
+                    <h5>'wh' questions:</h5>
+                    <br>
+
+                    <ul>
+                      <li>Where will I go?</li>
+                      <li>Why will you come early?</li>
+                      <li>When will it be cold?</li>
+                      <li>Who will she dance with?</li>
+                      <li>What time will he arrive?</li>
+                    </ul>
+
+                  
           </div>
 
 
@@ -537,17 +599,17 @@
               <tr>
                 <td>I<br></td>
                 <td>am/ 'm</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
               <tr>
                 <td>You ,We ,They <br></td>
                 <td>are/ 're</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
               <tr>
                 <td>He ,She ,It <br></td>
                 <td>is/ 's</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
             </table>
             <br>
@@ -598,17 +660,17 @@
               <tr>
                 <td>I<br></td>
                 <td>am not/ 'm not</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
               <tr>
                 <td>You ,We ,They <br></td>
                 <td>are not/ aren't</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
               <tr>
                 <td>He ,She ,It <br></td>
                 <td>is not/ isn't</td>
-                <td>eating</td>
+                <td>eating.</td>
               </tr>
             </table>
             <br>
@@ -638,7 +700,7 @@
             <!-- Past Continuous tika methana type krnna -->
 
             <h1>Past Continuous</h1>
-            <br> <br>
+            <br> 
             <p> The past continuous tense, also known as the past progressive tense, refers to a continuing action or
               state that was happening at some point in the past. The past continuous tense is formed by combining the
               past tense of to be (i.e., was/were) with
@@ -754,27 +816,50 @@
             <!-- Future Continuous tika methana type krnna -->
 
             <h1>Future Continuous</h1>
-            <p>trhtrhtrhrthrthtrhtrh
-              rth
-              thtrhtrhrthrthrthrthrthrth
-              rthtrhtrhrthrthrthrthrthbgfnbn rthrt het et he
-              thtrhrsthrtshrsthsthethehesh
-              hethserhwrghrwherhrhreh
-              erherhehwrehehrwreherrherherherherherherherherherrhreherherhergretergergregerg
-              rgregergergergergergergregregts, the old town and the modern city.</p>
-            <div style="width:80%; height: 500px">
-              <img src="" alt="img">
-            </div>
-            <p>Chania is the capital of the Chania dmcity can be divided in
-              hdsjhfjdjfjkdsjkvdshbuehucvheudhygeygwuehw
-              ewuhcuhewuhceuwhcuiewhuchewucheuwhc
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuewhcuhewuchhewcuehwuchew
-              ewucheuhcuwehcuhewuchuewhcuehucheuheuchuehcue
-              hewuhcuewhuchewuchuehcuehucehuchewuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
+            <br>
+
+            <p>The future continuous tense, sometimes also referred to as the future progressive tense, is a verb tense that indicates that something will occur in the future and continue for an expected length of time.</p>
+            <br>
+
+            <p>It is formed using the construction <br></p>
+
+            <p>will + be + (verb + ing).</p>
+            
+
+            <h6>Examples</h6>
+          
+            <ul>
+              <li>I will be writing articles.</li>
+              <li>Bob will be going to the library.</li>
+              <li>They will be playing football.</li>
+            </ul>
+            <br><br>
+
+            <h5>Next, here's the negative form:</h5><br>
+
+            <h6>The format is</h6>
+            <p>Subject + will not + be + (verb+ing)</p>
+            <ul>
+              <li>I will not be staying.</li>
+              <li>You will not be staying.</li>
+              <li>He will not be staying.</li>
+            </ul>
+            <br>
+
+
+
+            <h5>Finally, here's the question:</h5>
+
+            <p>will + Subject + be + (verb+ing) ?</p>
+
+            <ul>
+              <li>Will Jim be coming with us?</li>
+              <li>Will she be going to the party tonight?</li>
+              <li>Will I be sleeping in this room?</li>
+            </ul>
+            <br>
+
+
           </div>
 
 
@@ -891,7 +976,7 @@
 
             <h1>Past Perfect</h1>
 
-            <br> <br>
+            <br> 
 
             <p>The <b>past perfect</b>, also called the pluperfect, is a verb tense used to talk about actions that were 
               completed before some point in the past.</p>
@@ -1135,33 +1220,80 @@
                 <p>*The past participle of “to get” is “gotten” in American English. In British English, the past participle is “got.” </p>
 
 
-            
+            </div>
           <div class="slide">
 
             <!-- Future Perfect tika methana type krnna -->
 
             <h1>Future Perfect </h1>
-            <p>trhtrhtrhrthrthtrhtrh
-              rth
-              thtrhtrhrthrthrthrthrthrth
-              rthtrhtrhrthrthrthrthrthbgfnbn rthrt het et he
-              thtrhrsthrtshrsthsthethehesh
-              hethserhwrghrwherhrhreh
-              erherhehwrehehrwreherrherherherherherherherherherrhreherherhergretergergregerg
-              rgregergergergergergergregregts, the old town and the modern city.</p>
-            <div style="width:80%; height: 500px">
-              <img src="" alt="img">
-            </div>
-            <p>Chania is the capital of the Chania dmcity can be divided in
-              hdsjhfjdjfjkdsjkvdshbuehucvheudhygeygwuehw
-              ewuhcuhewuhceuwhcuiewhuchewucheuwhc
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuewhcuhewuchhewcuehwuchew
-              ewucheuhcuwehcuhewuchuewhcuehucheuheuchuehcue
-              hewuhcuewhuchewuchuehcuehucehuchewuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
+            <br>
+
+            <p>The future perfect is a verb tense used for actions that will be completed before some other point in the future.</p>
+            <br>
+
+            <p>The format is: <br>
+                subject  + will have +  past participle of the main verb
+            </p><br>
+
+            <h5>Examples</h5>
+            <ul>
+              <li>I will have finished this book</li>
+                <li>You will have studied the English tenses</li>
+                <li>She will have cooked dinner</li>
+                <li>We will have met Julie</li>
+                <li>It will have stopped raining</li>
+                <li>They will have left Japan</li>
+            </ul>
+            <br>
+
+            <p>For the short form, we change will to 'll. But, when we are speaking. <br>
+              Here are some examples for you to listen to:
+            </p>
+
+            <h6>Examples</h6>
+              <ul>
+                <li>I'll have finished this book</li>
+                <li>You'll have studied the English tenses</li>
+                <li>She'll have cooked dinner</li>
+              </ul>
+              <br><br>
+
+
+              <h6>Here's the negative:</h6>
+              <br>
+
+              <p>The format is: <br>
+                subject  + will not have +  past participle of the main verb
+              </p>
+
+              <h6>Examples</h6>
+              <ul>
+                <li>I will not have finished this book</li>
+                <li>You will not have studied the English tenses</li>
+                <li>We will not have met Julie</li>
+                <li>They will not have left Japan</li>
+              </ul>
+              <br><br>
+
+              <p>To make the question, just put 'will' before the subject:</p>
+
+              <h6>'Yes / no' questions:</h6>
+              <ul>
+                <li>will I have finished writing this book?</li>
+                  <li>will you have studied all the English verb tenses?</li>
+                  <li>will she have graduated?</li>
+              </ul>
+              <br>
+
+              <h6>'Wh' questions:</h6>
+              <ul>
+                <li>When will I have finished writing this book?</li>
+                  <li>When will she have been here three weeks?</li>
+                  <li>Why will you have studied all the English verb tenses by tomorrow?</li>
+              </ul>
+
+
+
           </div>
 
 
@@ -1299,47 +1431,153 @@
             <!-- Past Perfect Continous tika methana type krnna -->
 
             <h1>Past Perfect Continous</h1>
-            <p>ytjytjytjytjtyjytjtyjtmgnmgjmgmthmhgm
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuemhmhgmhgmnfdhhetheth e h etth thrthgfnrtnr
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
-            <div style="width:80%; height: 500px">
-              <img src="" alt="img">
+            <br>
+            
+            <p>The past perfect continuous tense (also known as the past perfect progressive tense) shows that an action that started in the past continued up until another time in the past. 
+              The past perfect continuous tense is 
+              constructed using <b> been + the verb’s present participle (root + -ing).</b>
+              <br> <br>
+              Unlike the present perfect continuous, which indicates an action that began in the past 
+              and continued up to the present, the past perfect continuous is a verb tense that indicates 
+              something that began in the past, 
+              continued in the past, and also ended at a defined point in the past.
+            
+            </p>
+
+            <br> <br>
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);"> <b> He had been drinking </b> milk out the carton when Mom walked into the kitchen.
+                </p>
+              </div>
             </div>
-            <p>dhygeygwuehw
-              ewuhcuhewuhceuwhcuiewhuchewucheuwhc
-              ewhuhcuewhcuhewuhcewuchuewhcuewytjytjhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuewhcuhewuchhewcuehwuchew
-              ewucheuhcuwehcuhewuchuewhcuehucheuheuchuehcue
-              hewuhcuewhuchewuchuehcuehucehuchewuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
+
+            <br>
+
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);"> <b> I had been working </b> at the company for five years when I got the promotion.
+                </p>
+              </div>
+            </div>
+            <br>
+
+            <p>When, for, since, and before are words that you may see used 
+              alongside the past perfect continuous tense.
+            </p>
+            <br><br>
+
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);"> Martha <b> had been walking </b>three miles a day before she broke her leg.
+                </p>
+              </div>
+            </div>
+
+            <br>
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);">The program that was terminated <b> had been working </b> well since 1945.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);"> Cathy <b> had been playing </b> the piano for 35 years when she was finally asked to do a solo with the local orchestra.
+                </p>
+              </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+              <div class="d-inline-block">Example</div>
+              <div class="d-inline-block">
+                <p style="margin-left: 70px; color: rgb(235, 168, 80);"> He <b> had been throwing </b> rocks at her window for five minutes before she finally came out on the balcony and said, “Hey, Romeo.”
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+          
+
+              
+
+
+            
+
+
+
           </div>
           <div class="slide">
 
             <!-- Future Perfect Continous tika methana type krnna -->
 
             <h1>Future Perfect Continous</h1>
-            <p>yjyjyjyjthe Chania dmjynynyn
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuytjtyjtyjytjytjtyewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcuyyjytjytjytjtyjtyj
-              ewucheuhcuwehcuhewuchuewhcuehucheuheuchuehcue
-              hewuhcueytjytjyjyjuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
-            <div style="width:80%; height: 500px">
-              <img src="" alt="img">
-            </div>
-            <p>ryjyrj capital ojdyjgwuehw
-              ewuhcuhewuhceuwhcuiewhuchewucheuwhc
-              ewhuhcuewhcuhewuhcewuchuewhcuewhc
-              ewhcuewhcuhewucheuhcuwehcuheuchewuhcuewhue
-              uhewuchuehcuewhcuewhcuehwcuewhcew
-              ewuhcueryjyrjryjyjwuhuehucew
-              ehuchewuhcuewhuewhuhuewctwo parts, the old town and the modern city.</p>
+            <br>
+
+            <p>The future perfect continuous, also sometimes called the future perfect progressive, is a verb tense that describes actions that will continue up until a point in the future.</p>
+            <br>
+            <p>The format is: <br>
+              Subject + will + have + been + verb’s present participle (verb root + ing)</p>
+            <br>
+
+            <h6>Examples</h6>
+            <ul>
+              <li>I will have been written articles on different topics.</li>
+                <li>Bob will have been studying in the library.</li>
+                <li>April will have been gossiping in the coffee shop.</li>
+                <li>Robert will have been reading various kinds of books.</li>
+                <li>They will have been playing football in that field.</li>
+            </ul>
+            <br><br>
+
+            <p><h6>Here's the Negative form:</h6> <br>
+              The format is <br>
+              Subject + will + not + have + been + verb’s present participle (verb root + ing)
+            </p>
+
+            <h6>Examples</h6>
+            <ul>
+              <li>I won't have been living.</li>
+              <li>You won't have been living.</li>
+              <li>He won't have been living.</li>
+            </ul>
+            <br><br>
+
+            <h5>Here's the question form</h5>
+            <br>
+
+            <p>'Yes / No' Questions</p>
+
+            <ul>
+              <li>Will I have been working?</li>
+                <li>Will you have been sleeping?</li>
+                <li>Will she have been studying?</li>
+            </ul>
+            <br>
+
+            <p>'Wh' Questions</p>
+
+            <ul>
+              <li>Where will I have been working?</li>
+              <li>Why will you have been sleeping?</li>
+              <li>Where will she have been studying?</li>
+            </ul>
+
+            
+
+
           </div>
         </div>
       </div>
@@ -1399,14 +1637,14 @@
       </div>
     </div>
   </footer>
-  <!-- other part of javascripts -->
-  <script src="../scripts/Grammer.js"></script>
+
+  
   <!-- jquery JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="/scripts/jquery.js"></script>
   <!--Bootstrap JS-->
   <script src="../scripts/bootstrap.bundle.js"></script>
+    <!-- other part of javascripts -->
+  <script src="../scripts/Grammer.js"></script>
 </body>
 
 </html>

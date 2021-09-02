@@ -10,10 +10,11 @@
 
 /*nav bar*/
 #logo{
-    width: 40px;
+    width: 72px;
     height: 40px;
     margin: 0px 20px ;
     padding: 0;
+    border-radius: 20px;
 }
 
 .ml-auto{
@@ -45,6 +46,7 @@
 .navbar{
     background-color: rgba(0, 0, 0, 0.6) !important;
     padding: 0;
+    max-width: 100vw;
 }
 
 .banner{
@@ -201,6 +203,16 @@
         font-size: 20px;
         padding: 3px;
     }
+    #g-btn button{
+        background-color: rgba(32,140,140,1);
+    }
+    #g-btn button:hover{
+        background-color: white;
+    }
+    #v-btn button{
+        background-color: transparent;
+    }
+
 }
 
 @media screen  and (max-width: 576px) and (min-width: 440px){

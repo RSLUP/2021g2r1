@@ -16,7 +16,7 @@
   <header id="quiz">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img id="logo" src="/images/Elogo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="/images/nav-logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,7 +26,7 @@
               <a id="nav-home" class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Grammer.html">Grammer</a>
+              <a class="nav-link" href="/pages/Grammer.html">Grammar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/Vocabulary.html">Vocabulary</a>
@@ -49,22 +49,20 @@
   
   <!-- Invisible Quize Box Wrapper  -->
   <div class="quizes-wrapper">
-
     <!--Quiz rules Window-->
     <div id="quize-rules">
       <div class="quize-box col-11">
         <div class="rule-title">
-            <span>Impotent Rulers of this Quiz</span>
+            <span>Importent Rulers of this Quiz</span>
             <button type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <ol class="rule-list">
             <li class="info">There are 5 numbers of question in this quiz.</li>
             <li class="info">Once you select your answer, you can't reselect.</li>
-            <li class="info">You can't exit from the Quiz while you're playing.</li>
             <li class="info">You'll get points on the basis of your correct answers.</li>
         </ol>
         <div class="rule-footer">
-          <div class="btn btn-primary">Continue</div>
+          <div class="continue-btn">Continue</div>
         </div>
       </div>
     </div>
@@ -72,31 +70,17 @@
     <div id="quize-question">
       <div class="quize-box col-11">
         <div class="quiz-title">
-          <h2>Question 1/5</h2>
+          <div class="d-flex justify-content-between">
+            <h2 class="me-1">Quiz Type :</h2>
+            <h2></h2>
+          </div>
+          <button type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div class="quiz-body">
-          <div class="que-text">
-            <span>What does HTML stand for?</span>
-          </div>
-          <div class="option-list">
-            <div class="li right">
-              <span>Hyper Text markup languege.</span>
-              <div class="icon tick"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="li wrong">
-              <span>Hyper Text markup languege.</span>
-              <div class="icon cross"><i class="fas fa-times"></i></div>
-            </div>
-            <div class="li">
-              <span>Hyper Text markup languege.</span>
-            </div>
-            <div class="li" style="margin-bottom: 0;">
-              <span>Hyper Text markup languege.</span>
-            </div>
-          </div>
+           <!-- in run tim javascript will inject html code here   -->
         </div>
         <footer class="quiz-footer">
-          <div class="next-btn btn btn-primary d-fle">Next</div>
+          <div class="next-btn">Next</div>
         </footer>
       </div>
     </div>
@@ -107,17 +91,11 @@
           <h2>Quiz Result</h2>
         </div>
         <div class="result-body">
-          <div class="image">
-            <img src="/images/QuizeLogo/golden.png" alt="">
-          </div>
-          <h3>Congratulations!</h3>
-          <p>You Earnd E-net present simple Golden Badge</p>
-          <p>Your Score</p>
-          <span><h1>50 / 50</h1></span>
+        <!-- in run tim javascript will inject html code here   -->
         </div>
         <div class="result-footer">
-          <div class="btn btn-primary">Replay</div>
-          <div class="btn btn-primary">Take New Quiz</div>
+          <div class="replay-btn" onclick="replayQuiz()">Replay</div>
+          <div class="exit-btn">Exit</div>
         </div>
       </div>
     </div>
@@ -126,154 +104,224 @@
 
 
     <!--Quzes page visible bodypart-->
+
   <div class="body-part">
     <div class="container my-5">
+      <div class="body-title">
+        <div class="title-logo">
+          <img src="/images/Elogo.png" alt="">
+        </div>
+        <div class="title-txt">
+          <h1>E - NET Quiz Time</h1>
+          <p>Test your English knowlege FREE online! Do as many quiz as you like. Get the answer after each question. Try to get Golden Trophy for all Quizes.</p>
+        </div>
+      </div>
+      <hr>
+      <div id="lesson-tenses" class="my-5 mx-auto col-12 d-flex justify-content-center align-items-center">
+        <h2 class="info">Quizes for Tenses</h2>
+      </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
             <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
+              <div class="img">
+                <img src="/images/QuizeLogo/pre sim.png" alt="Img">
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Simple Present</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre con.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Present Continuous</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre per.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Present Perfect</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/Pres pp.png" alt="Img">
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto shadow-none">Start Quiz</button>
-              </div>
+            <div class="card-body">
+              <h5 class="card-title">Present Perfect Continuous</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
             <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
+              <div class="img">
+                <img src="/images/QuizeLogo/past sim.png" alt="Img">
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Simple Past</h5>
+
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/past con.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Past Continuous</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/past per.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Past Perfect</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/past pp.png" alt="Img">
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+            <div class="card-body">
+              <h5 class="card-title">Past Perfect Continuous</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
             <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
+              <div class="img">
+                <img src="/images/QuizeLogo/fu sim.png" alt="Img">
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Simple Future</h5>
+
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/fu con.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Future Continuous</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/fu per.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Future Perfect</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/fu pp.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Future Perfect Continuous</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div id="lesson-tenses" class="my-5 mx-auto col-12 d-flex justify-content-center align-items-center">
+        <h2 class="info">Speech Quizzes</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
+              <div class="img">
+                <img src="/images/QuizeLogo/pre sim.png" alt="Img">
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Noun</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre con.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Verb</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card-container">
-            <div class="card">
-              <img src="../images/main.png" class="card-img-top" alt="Img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to  card's content.</p>
-                <button class="btn btn-primary shadow-none m-auto">Start Quiz</button>
-              </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre per.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Adverb</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="img">
+              <img src="/images/QuizeLogo/Pres pp.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Adjective</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 d-lg-flex justify-content-center">
+          <div class="card col-lg-10">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre sim.png" alt="Img">
+            </div>
+            <div class="card-body" >
+              <h5 class="card-title">Pronoun</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 d-lg-flex justify-content-center">
+          <div class="card col-lg-10">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre con.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Preposition</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 d-lg-flex justify-content-center">
+          <div class="card col-lg-10">
+            <div class="img">
+              <img src="/images/QuizeLogo/pre per.png" alt="Img">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Conjunction</h5>
             </div>
           </div>
         </div>
@@ -314,16 +362,16 @@
             <div class="social-media row">
               <ul class="mb-0">
                 <li>
-                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/Enet.RSLUP" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/enet.rslup/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fas fa-globe-asia"></i></i></a>
+                  <a href="" target="_blank"><i class="fas fa-globe-asia"></i></i></a>
                 </li>
               </ul>
             </div>

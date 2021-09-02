@@ -16,7 +16,7 @@
   <header id="quiz">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img id="logo" src="/images/Elogo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="/images/nav-logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,16 +26,16 @@
               <a id="nav-home" class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Grammer.html">Grammer</a>
+              <a class="nav-link" href="/pages/Grammer.html">Grammar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Vocabulary.html">Vocabulary</a>
+              <a class="nav-link" id="nav-vocab" href="/pages/Vocabulary.html">Vocabulary</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/Speech.html">Speech</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-quiz" href="/pages/Quiz.html">Quiz</a>
+              <a class="nav-link" href="/pages/Quiz.html">Quiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/About.html">About</a>
@@ -47,9 +47,266 @@
   </header>
   <!--nav bar end-->
       <!--Start implement from here-->
-      
+  <div class="body-container">
+    <div class="container">
+      <div class="menu-show">
+        <label class="button" onclick="showMenu()">
+          <p class="mb-0 me-2">Other Lessons</p>
+          <span class="icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        </label>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3 col-sm-12 col-12 menu">
+          <div class="menu-hide">
+            <label class="button" onclick="hideMenu()">
+              <span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            </label>
+          </div>
+          <ul>
+            <li class="dot" onclick="currentSlide(1)">New words</li>
+            <li class="dot" onclick="currentSlide(2)">Synonyms</li>
+            <li class="dot" onclick="currentSlide(3)">Antonyms</li>
+            <li class="dot" onclick="currentSlide(4)">Idioms</li>
+            <li class="dot" onclick="currentSlide(5)">Tongue twisters</li>
+            
+          </ul>
+        </div>
+        <div class="col-md-9 col-sm-12 col-12 mt-md-0 mt-sm-5 mt-5 p-md-5 p-sm-2">
+          
+          <!-- new words content add here -->
+          <div id="newwords" class="slide">
+            <h1>New words</h1>
+            <p>dhgajhdfasdfsuagfcdvsjgvasgcvsgvcscvcvsgcsvdsvsdvsd
+              dsvsdvsdvdsvbsjvkasvcaksvkasvakvkavavnscakcsacsc
+              sasdasjkbasbaksvasvksavkasvkavkas
+              sashcavcascvashcvsajhvcjasvhchjaca
+            </p>
+
+            <br><br>
+
+            <p>ajhsvkhcvskvcsdvcksdcvjc
+              csjdcvksdjhcvsjkhjasvjasv
+              scvshadvksvahjlvjsvjvj
+              vhjcsavcjshvaslhvlasvhav
+              hvchjsvdcjsavljshvlav
+              vashjgcvwkhvfkwefkhwee
+              vksvksvckawfvhwefwef
+            </p>
+
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+          </div>
+
+          <!-- Synonyms content add here -->
+          <div id="Synonyms" class="slide">
+            <h1>Synonyms</h1>
+            <p>dhgajhdfasdfsuagfcdvsjgvasgcvsgvcscvcvsgcsvdsvsdvsd
+              dsvsdvsdvdsvbsjvkasvcaksvkasvakvkavavnscakcsacsc
+              sasdasjkbasbaksvasvksavkasvkavkas
+              sashcavcascvashcvsajhvcjasvhchjaca
+            </p>
+
+            <br><br>
+
+            <p>ajhsvkhcvskvcsdvcksdcvjc
+              csjdcvksdjhcvsjkhjasvjasv
+              scvshadvksvahjlvjsvjvj
+              vhjcsavcjshvaslhvlasvhav
+              hvchjsvdcjsavljshvlav
+              vashjgcvwkhvfkwefkhwee
+              vksvksvckawfvhwefwef
+            </p>
+
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+          </div>
+
+          <!-- Antonyms content add here -->
+          <div id="Antonyms" class="slide">
+            <h1>Antonyms</h1>
+            <p>dhgajhdfasdfsuagfcdvsjgvasgcvsgvcscvcvsgcsvdsvsdvsd
+              dsvsdvsdvdsvbsjvkasvcaksvkasvakvkavavnscakcsacsc
+              sasdasjkbasbaksvasvksavkasvkavkas
+              sashcavcascvashcvsajhvcjasvhchjaca
+            </p>
+
+            <br><br>
+
+            <p>ajhsvkhcvskvcsdvcksdcvjc
+              csjdcvksdjhcvsjkhjasvjasv
+              scvshadvksvahjlvjsvjvj
+              vhjcsavcjshvaslhvlasvhav
+              hvchjsvdcjsavljshvlav
+              vashjgcvwkhvfkwefkhwee
+              vksvksvckawfvhwefwef
+            </p>
+
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+          </div>
+
+          <!-- Idioms content add here -->
+          <div id="Idioms" class="slide">
+            <h1>Idioms</h1>
+            <p>dhgajhdfasdfsuagfcdvsjgvasgcvsgvcscvcvsgcsvdsvsdvsd
+              dsvsdvsdvdsvbsjvkasvcaksvkasvakvkavavnscakcsacsc
+              sasdasjkbasbaksvasvksavkasvkavkas
+              sashcavcascvashcvsajhvcjasvhchjaca
+            </p>
+
+            <br><br>
+
+            <p>ajhsvkhcvskvcsdvcksdcvjc
+              csjdcvksdjhcvsjkhjasvjasv
+              scvshadvksvahjlvjsvjvj
+              vhjcsavcjshvaslhvlasvhav
+              hvchjsvdcjsavljshvlav
+              vashjgcvwkhvfkwefkhwee
+              vksvksvckawfvhwefwef
+            </p>
+
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            
+          </div>
+
+          <!-- Tongue twisters content add here -->
+          <div id="Tongue" class="slide text-light">
+                <h1 style="color: yellowgreen;">Tongue twisters</h1>
+
+                <p>A sentence or series of words that is hard to say correctly is called a tongue twister in English. Children love tongue twisters and challenge their friends to try to say them fast several times in row. For English learners, tongue twisters are a fun way to work on one or two sounds at a time to get the pronunciation just right. Start by saying the tongue twister slowly, then try to speed up. Once you can say a tongue twister through, try to say it twice or three times in a row for a bigger challenge.</p>
+                
+                <div class="container">
+                  <img src="../images/tt.png" alt="" width="400px" height="600px">
+                </div>
+
+                <br><br>
+
+                <div class="container">
+                  <div class="row g-2">
+                    <div class=" alert-success" role="alert">
+                      <p>A tongue twister is a sequence of words or sounds that are typically difficult to pronounce quickly and correctly. One example of a tongue-twisters is <b>'Peter Piper picked peck of pickled peppers.'</b> This is an example of a Tongue-Twister – even native English speakers can find them difficult.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+          
+                <div class="container">
+                    <table class="table table-primary table-striped table-bordered prop-rule-table">
+                        <thead class="table-secondary">
+                            <th>Tongue twister</th>
+                            <th>Sounds/words emphasized</th>
+                            <th>Difficulty (for a native speaker)</th>
+                        </thead>
+
+                        <tr>
+                          <td>How much wood would a woodchuck chuck if a woodchuck could chuck wood?</td>
+                          <td>wood & chuck (means: throw)</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?</td>
+                          <td>p</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>Can you can a can as a canner can can a can?</td>
+                          <td>can</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>Frivolously fanciful Fannie fried fresh fish furiously</td>
+                          <td>f</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>To begin to toboggan first buy a toboggan, but don't buy too big a toboggan. Too big a toboggan is too big a toboggan to buy to begin to toboggan.</td>
+                          <td>b & t</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>She saw Sharif's shoes on the sofa. But was she so sure those were Sharif's shoes she saw?</td>
+                          <td>s & sh</td>
+                          <td>Easy</td>
+                        </tr>
+
+                        <tr>
+                          <td>Give papa a cup of proper coffe in a copper coffe cup.</td>
+                          <td>c & p</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>Black background, brown background</td>
+                          <td>b</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>Seventy-seven benevolent elephants</td>
+                          <td>l & v</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>The chic Sikh's sixty-sixth sheep is sick</td>
+                          <td>s & k</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>A loyal warrior will rarely worry why we rule.</td>
+                          <td>l & r</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>A pessemistic pest exists amidst us.</td>
+                          <td>s & st</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>Drew Dodd's dad's dog's dead.</td>
+                          <td>d</td>
+                          <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                          <td>Which witch switched the Swiss wristwatches?</td>
+                          <td>w, s & ch</td>
+                          <td>Hard</td>
+                        </tr>
+
+                        <tr>
+                          <td>She sells seashells by the seashore.</td>
+                          <td>s & sh</td>
+                          <td>Hard</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            
+
+                <br><br><br>
+                <br><br><br>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!--footer start-->
-    <footer class="footer text-center">
+  <footer class="footer text-center">
       <div>
         <div class="row pt-4">
           <div class="col-md-4">
@@ -81,16 +338,16 @@
             <div class="social-media row">
               <ul class="mb-0">
                 <li>
-                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/Enet.RSLUP" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/enet.rslup/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fas fa-globe-asia"></i></i></a>
+                  <a href="" target="_blank"><i class="fas fa-globe-asia"></i></i></a>
                 </li>
               </ul>
             </div>
@@ -99,10 +356,14 @@
         <div class="text-center copyright  pt-2 pb-3">© 2021 Copyright:<a href="#"> RSLUP GROUP-2</a>
         </div>
       </div>
-    </footer> 
-    <!--Jquery JS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!--Bootstrap JS-->
-    <script src="../scripts/bootstrap.bundle.js"></script>
+  </footer> 
+
+ 
+  <!-- jquery JS -->
+  <script src="/scripts/jquery.js"></script>
+  <!--Bootstrap JS-->
+  <script src="../scripts/bootstrap.bundle.js"></script>
+    <!-- other part of javascripts -->
+  <script src="../scripts/Grammer.js"></script>
 </body>
 </html>
