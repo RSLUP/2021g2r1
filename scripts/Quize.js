@@ -1231,37 +1231,37 @@ function getUserSelection(ans){
 let ResultMsg = [
     {
         // Massage for 0 correct answer
-        imgSrc: "/images/QuizeLogo/duck.gif",
+        imgSrc: "../images/QuizeLogo/duck.gif",
         msg: "Oops!",
         subMsg: `You must work hard for `
     },
     {
         // Massage for 1 correct answer
-        imgSrc: "/images/QuizeLogo/notEnough.png",
+        imgSrc: "../images/QuizeLogo/notEnough.png",
         msg: "Oops!",
         subMsg: `You must work hard for `
     },
     {
         // Massage for 2 correct answer
-        imgSrc: "/images/QuizeLogo/notEnough.png",
+        imgSrc: "../images/QuizeLogo/notEnough.png",
         msg: "Not Enough!",
         subMsg: `You must work hard for `
     },
     {
         // Massage for 3 correct answer
-        imgSrc: "/images/QuizeLogo/bronze.png",
+        imgSrc: "../images/QuizeLogo/bronze.png",
         msg: "Congratulations!",
         subMsg: `You earned E-net Bronze Trophy for `
     },
     {
         // Massage for 4 correct answer
-        imgSrc: "/images/QuizeLogo/silver.png",
+        imgSrc: "../images/QuizeLogo/silver.png",
         msg: "Congratulations!",
         subMsg: `You earned E-net Silver Trophy for `
     },
     {
         // Massage for 5 correct answer
-        imgSrc: "/images/QuizeLogo/golden.png",
+        imgSrc: "../images/QuizeLogo/golden.png",
         msg: "Congratulations!",
         subMsg: `You earned E-net Golden Trophy for `
     }
