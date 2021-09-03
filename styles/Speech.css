@@ -179,6 +179,9 @@ display: none;
         text-align: center;
         transition: all .5s;
     }
+    .body-container .menu ul{
+        position: relative;
+    }
     .body-container .menu-show{
         display: block;
         position: fixed;
@@ -222,7 +225,7 @@ display: none;
     }
     /* quiz butoo CSS */
     .quiz-contain{
-        margin-bottom: 3rem;
+        margin-bottom: 35px;
     }
 }
 

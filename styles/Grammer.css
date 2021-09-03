@@ -212,6 +212,9 @@ body{
         text-align: center;
         transition: all .5s;
     }
+    .body-container .menu ul{
+        position: relative;
+    }
     .body-container .menu-show{
         display: block;
         position: fixed;
@@ -249,6 +252,9 @@ body{
         border: 3px solid;
         color: #ffffff;
         border-color: #ffffff;;
+    }
+    .quiz-contain{
+        margin-bottom: 35px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
