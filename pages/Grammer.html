@@ -60,7 +60,7 @@
 
   <!--Body part of the Grammer Page-->
   <div class="body-container">
-    <div class="container">
+    <div class="container-fluid">
       <div class="menu-show">
         <label class="button" onclick="showMenu()">
           <p class="mb-0 me-2">Other Lessons</p>
@@ -68,13 +68,13 @@
         </label>
       </div>
       <div class="row mt-3">
-        <div class="col-md-3 col-sm-12 col-12 menu">
+        <div class="col-md-3 menu">
           <div class="menu-hide">
             <label class="button" onclick="hideMenu()">
               <span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
             </label>
           </div>
-          <ul>
+          <ul class="ps-md-3 pt-md-3 col-md-3">
             <li class="dot" onclick="currentSlide(1)">Simple Present</li>
             <li class="dot" onclick="currentSlide(2)">Simple Past</li>
             <li class="dot" onclick="currentSlide(3)">Simple Future</li>
@@ -89,7 +89,7 @@
             <li class="dot" onclick="currentSlide(12)">Future Perfect Continuous</li>
           </ul>
         </div>
-        <div class="col-md-9 col-sm-12 col-12 mt-md-0 mt-sm-5 mt-5 p-md-5 p-sm-2">
+        <div class="col-md-9 col-sm-12 col-12 mt-md-0 mt-sm-5 mt-5 p-md-5">
           
           <div id="simplepresent" class="slide">
             <!-- Simple Present-->
