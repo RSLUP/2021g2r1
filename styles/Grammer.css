@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    box-sizing: border-box;
 }
 body{
     background-image: linear-gradient(to top right,#1f2222, #1f8787);
@@ -63,12 +64,14 @@ body{
 .menu{
     background-color:#1f2222;
     padding: 0;
+    position: relative;
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed;
 }
 
 .menu #tense-btn{

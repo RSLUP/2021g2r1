@@ -62,12 +62,14 @@ body{
 .menu{
     background-color:#1f2222;
     padding: 0;
+    position: relative;
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed;
 }
 
 .menu #tense-btn{
