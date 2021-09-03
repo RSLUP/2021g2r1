@@ -236,3 +236,39 @@ body{
         margin: auto;
     }
 }
+
+/*idioms */
+
+.equal{
+ /* vertical-align: middle;*/
+  width: 50px;
+  height:50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.sideImages{
+  width:200px;
+  height: 200px;
+}
+
+
+.column {
+  float: middle;
+  width: 33.33%;
+  padding: 1px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* end idioms */
