@@ -749,57 +749,57 @@ let futurPerfCont = [
 let noun = [
     {
         id: 1,
-        Question: "Noun",
-        answer: 1,
+        Question: "No It will take all of your energy and will to be able to walk again. What is the noun in the sentence",
+        answer: 4,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "Take",
+            "All",
+            "Your",
+            "Energy"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "Sharks and lampreys are not true fish because their skeletons are made of cartilage rather than bone. What is the noun in the sentence",
+        answer: 1,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "Bone",
+            "True",
+            "Because",
+            "Their"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: "We have a new ______ of books.",
+        answer: 3,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "heard",
+            "Seize",
+            "collection",
+            "All"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "The Trojans’ rash decision to accept the wooden horse led to their destruction. What is the noun in the sentence",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
+            "Their",
+            "Destruction",
+            "Led",
             "None of these"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
-        answer: 4,
+        Question: "A group of flowers is called a _____.",
+        answer: 3,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "bouquet",
+            "bunch",
+            "one and two",
+            "band"
         ]
     },
 
@@ -981,57 +981,57 @@ let adject = [
 let pronoun = [
     {
         id: 1,
-        Question: "preonun",
-        answer: 1,
+        Question: "The old woman lived alone, with ---- to look after ----.",
+        answer: 4,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "someone / her",
+            "anyone / herself",
+            "everyone / she",
+            "no one / her"
         ]
     },
     {
         id: 2,
-        Question: "dsfdfdfdsafdsafdsfds",
-        answer: 4,
+        Question: "When the little boy grabbed the lizard, ---- tail broke off in ---- hand.",
+        answer: 3,
         options: [
-            "Randsfdsfdsfry",
-            "Randodsfdhrthtehemory",
-            "Runrgregregremory",
-            "Noregrgregregrse"
+            "it's / his",
+            "Rit / him",
+            "its / his",
+            "its / he's"
         ]
     },
     {
         id: 3,
-        Question: "Whregergrgerg RAM",
-        answer: 2,
+        Question: " A baby learns the meaning of words as ---- are spoken by others and later uses ---- in sentences.",
+        answer: 1,
         options: [
-            "Randoregrgergmory",
-            "Ranrewgreger Memory",
-            "Runregregregregregory",
-            "Nonregregrgse"
+            "they / them",
+            "they / themselves",
+            "they / it",
+            "their / they"
         ]
     },
     {
         id: 4,
-        Question: "What is the full form of RAM",
-        answer: 3,
+        Question: "Find the possessive pronoun in the sentence 'Unless they do all of their homework, they won't allow to play'.",
+        answer: 2,
         options: [
-            "Random Access Memory",
-            "Randomely Access Memory",
-            "Run Acept Memory",
-            "None of these"
+            "unless",
+            "their",
+            "won't",
+            "they"
         ]
     },
     {
         id: 5,
-        Question: "Whregregegregregregof RAM",
+        Question: "Which sentence contains the plural 3rd person object pronoun?",
         answer: 4,
         options: [
-            "Ranregregregregemory",
-            "Randoregregregregry",
-            "Rregregregregregrry",
-            "Noregregregregrge"
+            "They grow rice and sell it.",
+            "She cooks for all of us.",
+            "he went to the office.",
+            "We catch fish and sell them."
         ]
     },
 
