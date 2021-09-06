@@ -252,11 +252,13 @@ box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
 
 padding: 10px; 
 
-border: 2px solid white; 
+border: 2px solid rgba(129, 129, 129, 0.479); 
 
 border-collapse: collapse; 
 
-color:black;
+background-color: rgba(0, 0, 0, 0.329);
+
+color:rgb(216, 216, 216);
 
 text-align: center; 
 
@@ -272,32 +274,35 @@ cursor: pointer;
 
  .irTable th,.irTable2 th{ 
 
-background-color: #838BC2; 
+background-color: rgba(0, 0, 0, 0.329); 
 
 } 
 
 
 .irTable tr:nth-child(odd){ 
 
-background-color: #EAE7FA; 
+background-color: rgba(0, 0, 0, 0.329); 
+} 
 
 } 
 
  .irTable tr:nth-child(even){ 
 
-background-color:#C9D9F0; 
-
+background-color:rgba(0, 0, 0, 0.329); 
+}
 } 
 
 .irTable2 tr:nth-child(n+6) {
 
-  background-color: #EAE7FA;
+  background-color: rgba(0, 0, 0, 0.329); 
+}
 
 }
 
 .irTable2 tr:nth-child(-n+5){
   
-background-color:#C9D9F0; 
+background-color:rgba(0, 0, 0, 0.329); 
+}
 
 }
 /* end verb and adverb*/
@@ -354,9 +359,9 @@ div img{
     }
 }
 .prepo-table-title{
-    color: black;
-    background-color: #838BC2;
-    border: solid white;
+    color: rgb(216, 216, 216);
+    background-color: rgba(0, 0, 0, 0.329);
+    border: solid rgba(129, 129, 129, 0.479);
 }
 .prep{
     display: flex;
@@ -366,7 +371,7 @@ div img{
     justify-content: center;
     border: none;
     width: 100%;
-    border: white solid 1px;
+    border: rgba(129, 129, 129, 0.479) 1px;
 }
 .co{
     flex: 16.666666%;
@@ -374,15 +379,15 @@ div img{
     padding: 0;
 }
 .co div{
-    color: black;
+    color: rgb(216, 216, 216);
     font-size: medium;
     width: auto;
-    border: rgb(255, 255, 255) solid 0.5px;
+    border: rgba(129, 129, 129, 0.479) solid 0.5px;
     border-collapse:collapse;
 
 }
 .prep div{ 
-    background-color: #C9D9F0;
+    background-color: rgba(0, 0, 0, 0.329);
 }
 
 @media only screen and (max-width: 510px){

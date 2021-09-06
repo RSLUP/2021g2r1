@@ -106,8 +106,6 @@ body{
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6) !important;
-    position: absolute;
-    bottom: 0px;
     width: 100%;
 }
 
@@ -162,7 +160,77 @@ body{
     display: none;
 }
 
+
+/*idioms */
+#Idioms .row{
+    align-items: center;
+    text-align: center;
+}
+#Idioms .equal{
+/* vertical-align: middle;*/
+    width: 50px;
+    height:50px;
+    margin: 0;
+
+}
+#Idioms .sideImages{
+    width:200px;
+    height: 200px;
+}
+
+/* end idioms */
+
+/* style for table */
+.synonyms-table,td,th{ 
+    font-size: 16px;
+    border: 2px solid rgba(129, 129, 129, 0.479);
+    border-collapse: collapse; 
+    color:rgb(216, 216, 216);
+    text-align: center; 
+    cursor: pointer;
+    padding: 10px;
+}
+tr{
+    height: 65px;
+}
+/* only for .synonyms-table */
+.synonyms-table td{
+    max-width: 50px;
+    font-size: 14px;
+    padding: 0px;
+}
+td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+/* only of tongue slide table */
+#Tongue table tr td:first-child{
+    text-align: left;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.829); 
+}
+table tr:nth-child(even){ 
+
+    background-color:rgba(0, 0, 0, 0.329); 
+}
+
+table tr:nth-child(odd){ 
+
+    background-color: rgba(0, 0, 0, 0.329); 
+}
+
+
 /*--media quaries--*/
+@media only screen and (max-width: 1024px) {
+    #Idioms .sideImages{
+        width:150px;
+        height: 150px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .form{
         max-width: 40%;
@@ -228,36 +296,38 @@ body{
     .quiz-contain{
         margin-bottom: 35px;
     }
+
+    /* table Query */
+    #table-wrapper p{
+        text-align: center;
+    }
+    .synonyms-table td{  
+        font-size: 16px;
+    }
+    /* Idioms slide CSS */
+    #Idioms .sideImages{
+        width:100px;
+        height: 100px;
+    }
+    #Idioms .equal{
+        /* vertical-align: middle;*/
+            width: 40px;
+            height:40px;
+        
+    }
 }
 
-  @media only screen and (max-width: 660px) {
+@media only screen and (max-width: 660px) {
     .form{
         max-width: 300px;
         margin: auto;
     }
 }
 
-/*idioms */
-
-.equal{
- /* vertical-align: middle;*/
-  width: 50px;
-  height:50px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-}
-
-.sideImages{
-  width:200px;
-  height: 200px;
-}
 
 
+
+<<<<<<< HEAD
 .column {
   float: middle;
   width: 33.33%;
@@ -281,3 +351,5 @@ body{
         max-width: 260px;
     }
 }
+=======
+>>>>>>> 468d3764313ae7166e32e468b43cb9a8c215614a
