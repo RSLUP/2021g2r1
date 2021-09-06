@@ -52,7 +52,7 @@
 body{
     background-image: linear-gradient(to top right,#1f2222, #1f8787);
     background-attachment: fixed;
-    background-position: 0% 100%; 
+    background-position: 0% 100%;
 }
 
 .body-container{
@@ -109,7 +109,7 @@ display: none;
 /*--footer*/
 .footer{
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
+    max-width: 100vw;
 }
 
 .form-control{
@@ -272,39 +272,30 @@ cursor: pointer;
   word-wrap: break-word;
 }
 
- .irTable th,.irTable2 th{ 
-
-background-color: rgba(0, 0, 0, 0.329); 
-
+.irTable th,.irTable2 th{ 
+    background-color: rgba(0, 0, 0, 0.329); 
 } 
 
 
 .irTable tr:nth-child(odd){ 
-
-background-color: rgba(0, 0, 0, 0.329); 
+    background-color: rgba(0, 0, 0, 0.329); 
 } 
 
-} 
 
  .irTable tr:nth-child(even){ 
-
-background-color:rgba(0, 0, 0, 0.329); 
+    background-color:rgba(0, 0, 0, 0.329); 
 }
-} 
 
 .irTable2 tr:nth-child(n+6) {
-
-  background-color: rgba(0, 0, 0, 0.329); 
+    background-color: rgba(0, 0, 0, 0.329); 
 }
 
-}
 
 .irTable2 tr:nth-child(-n+5){
-  
-background-color:rgba(0, 0, 0, 0.329); 
+    background-color:rgba(0, 0, 0, 0.329); 
 }
 
-}
+
 /* end verb and adverb*/
 
 .changeTx2 {

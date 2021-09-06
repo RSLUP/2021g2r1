@@ -5,8 +5,8 @@
 }
 body{
   background-color: #1e3f75;
-    background-image: radial-gradient(at 0% 20%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
-    radial-gradient(at 82% 65%, hsl(220.00, 0%, 0%) 0, transparent 55%);
+  background-image: radial-gradient(at 0% 20%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+  radial-gradient(at 82% 65%, hsl(220.00, 0%, 0%) 0, transparent 55%);
 }
 
 /*nav bar*/
@@ -233,9 +233,7 @@ body{
 /*--footer*/
 .footer{
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+  max-width: 100vw;
 }
 .form-control{
   border-right: none;
