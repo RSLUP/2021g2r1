@@ -283,28 +283,22 @@ background-color: rgba(0, 0, 0, 0.329);
 
 background-color: rgba(0, 0, 0, 0.329); 
 } 
-
-} 
-
- .irTable tr:nth-child(even){ 
+.irTable tr:nth-child(even){ 
 
 background-color:rgba(0, 0, 0, 0.329); 
 }
-} 
 
 .irTable2 tr:nth-child(n+6) {
 
   background-color: rgba(0, 0, 0, 0.329); 
 }
 
-}
 
 .irTable2 tr:nth-child(-n+5){
   
 background-color:rgba(0, 0, 0, 0.329); 
 }
 
-}
 /* end verb and adverb*/
 
 .changeTx2 {
