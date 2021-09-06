@@ -137,13 +137,6 @@ body{
     
     
 }
-/* #aboutus{
-  text-align:inherit;
-  padding:60px 80px;
-  border-radius: 30px;
-  box-shadow: 0 0 40px rgb(165, 235, 196);
-  
-} */
 #aboutus h4{
   font-weight: bold;
 }
@@ -151,8 +144,8 @@ body{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
     overflow: hidden;
     border-radius: 25px;
-    height: 400px;
-    width: 300px;
+    height: 363px;
+    width: 272px;
     margin: auto;
 }
 .img1 img{
@@ -178,7 +171,7 @@ body{
     transition: .7s;
 }
 .main-text{
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: center;
 }
 .main-text h2{
@@ -188,7 +181,8 @@ body{
     margin: 0 0 20px;
 }
 .main-text p{
-    font-size: 16px;
+    font-style: italic;
+    font-size: 14px;
     padding: 0 15px;
 }
 .items ul{
@@ -220,14 +214,15 @@ body{
 .profile-area h2, .profile-area p{
   color: rgb(16, 82, 82);
 }
-
+.socials ul{
+  padding: 0;
+  margin: 0;
+}
 .socials ul li{
   
   list-style: none;
   display: inline-block;
   padding: 0 10px;
-  
-
 }
 
 /*--footer*/
