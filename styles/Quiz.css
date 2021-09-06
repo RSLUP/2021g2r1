@@ -295,9 +295,7 @@
 /* Quiz Bodypart CSS */
 
 body{
-    background-color: #1e3f75;
-    background-image: radial-gradient(at 0% 20%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
-    radial-gradient(at 82% 65%, hsl(220.00, 0%, 0%) 0, transparent 55%);
+    background-image: linear-gradient(to top right,#1f2222, #1f8787);
     /* background-repeat: no-repeat;
     height: 100%; */
     background-attachment: fixed;
