@@ -272,3 +272,12 @@ body{
 }
 
 /* end idioms */
+
+@media only screen and (min-width: 1050px){
+    .menu{
+        max-width: 260px;
+    }
+    .menu >*{
+        max-width: 260px;
+    }
+}
