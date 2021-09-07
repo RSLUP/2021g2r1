@@ -160,11 +160,42 @@ body{
     display: none;
 }
 
+.slide h1{
+    font-weight: bold;
+    color: rgb(230, 125, 51);
+    margin-bottom: 20px;
+}
+.slide h5{
+    color: rgb(13, 167, 206);
+}
+.slide h6{
+    color: rgb(5, 190, 175);
+}
+.slide h4{
+    color: khaki;
+    margin-bottom: 20px;
+}
+.slide h3{
+    color: rgb(13, 167, 206);
+    font-weight: 600;
+}
+
+/* Antonyms */
+ul li{
+    color: rgb(233, 223, 136);
+}
+.slide ul a{
+    color: rgb(237, 255, 71);
+}
+#Antonyms p{
+    color: white;
+}
 
 /*idioms */
 #Idioms .row{
     align-items: center;
     text-align: center;
+    padding: 10px 0 30px 0;
 }
 #Idioms .equal{
 /* vertical-align: middle;*/
@@ -178,10 +209,11 @@ body{
     height: 200px;
 }
 
+
 /* end idioms */
 
 /* style for table */
-.synonyms-table,td,th{ 
+td,th{ 
     font-size: 16px;
     border: 2px solid rgba(129, 129, 129, 0.479);
     border-collapse: collapse; 
@@ -190,7 +222,7 @@ body{
     cursor: pointer;
     padding: 10px;
 }
-tr{
+.synonyms-table tr{
     height: 65px;
 }
 /* only for .synonyms-table */
@@ -315,12 +347,31 @@ table tr:nth-child(odd){
             height:40px;
         
     }
+    #Tongue th,#Tongue td{
+        padding: 5px;
+        font-size: 14px;
+    }
+    #Tongue table{
+        margin-bottom: 20px;
+    }
+    #Tongue .row,#Tongue .container{
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 660px) {
     .form{
         max-width: 300px;
         margin: auto;
+    }
+}
+@media only screen and (min-width: 1050px){
+    .menu{
+        max-width: 260px;
+    }
+    .menu >*{
+        max-width: 260px;
     }
 }
 
