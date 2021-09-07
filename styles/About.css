@@ -127,11 +127,11 @@ body{
 
 .items{
     overflow: hidden;
-    background-color: rgb(7, 20, 18);
+    background-color: rgb(4, 49, 43);
     padding: 0px 50px;
     
  }
-.items h3{
+.items h4{
     color:white;
     text-align: center;
     
@@ -189,6 +189,8 @@ body{
   text-align: center;
   margin:0cm;
   padding: 10px;
+  padding-top: 2px;
+  padding-bottom: 0;
 }
 
 .items ul li{
