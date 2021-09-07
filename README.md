@@ -4,7 +4,7 @@ E-net English Learning Platform is made for Beginner learners who need to learn 
 <a href="https://rslup.github.io/2021g2r1/"> <h3>Visit E-Net Website</h3></a>
 <br>
 <a href="https://rslup.github.io/2021g2r1/"> <img src="images\ourpages\home.jpg" height=500> </a>
-<br>
+<br><br>
 Knowing English increases your chances of getting a good job in a multinational company within your home country or for finding work abroad. It's also the language of international communication, the media and the internet, so learning English is important for socialising and entertainment as well as work!
 <br><br>
 
