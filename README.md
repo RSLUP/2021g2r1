@@ -12,7 +12,6 @@ Technolgies we used
 <li>JavaScript
 <li>Jquery
 <li>bootstrap
-
 <br><br>
 Team Members
 <li>Sachintha Chathuranga
